@@ -282,6 +282,16 @@ Going Remote
 
 
 
+### in the class room 
+1. Classroom Works - mono repo (dont create branches)
+2. Project 
+3. Assessment 
+
+
+1. TDD - Test Driven Development 
+2. BDD - Behavioural Driven Development 
+3. DDD - Domain Driven Development 
+4. MDD - Model Driven Development 
 
 
 
