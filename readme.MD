@@ -305,7 +305,7 @@ Going Remote
 6. Then merge your code to main branch 
 7. You should show the git graph to the class room 
 8. Have a .gitignore file 
-9. 
+
 
 
 
