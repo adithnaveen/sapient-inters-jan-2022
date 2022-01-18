@@ -295,6 +295,17 @@ Going Remote
 
 
 
+## Day 1 Quick Assignement  (30 Mins )
+
+1. Create 1 github repo 
+2. Add Collaborators 2-3 
+3. 1 person shall create the main branch 
+4. from there all others will create a branch 
+5. you will code in respective branch (small code is enough)
+6. Then merge your code to main branch 
+7. You should show the git graph to the class room 
+8. Have a .gitignore file 
+9. 
 
 
 
