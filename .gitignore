@@ -1,5 +1,8 @@
 documents
 *.class
 *.exe
+**/.metadata
+**/.sonarlint
+**/target/**
 
 

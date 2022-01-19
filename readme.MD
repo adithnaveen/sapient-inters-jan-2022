@@ -312,7 +312,86 @@ Question:
 Satyaa - when conflits occur ? 
 
 
+<hr >
+
+#Day 2 
+
+### Tools and Packages	
+APPLICATION PACKAGING AND BUILD TOOLS 
+(MAVEN/GRADLE)
+
+
+Introduction
+Why Maven?
+Introduction to debugging
+Install Java(Latest)
+Install Eclipse(Latest)
+Configure Tomcat in eclipse
+Web projects and eclipse settings
+Maven Installation and Setup
+POM XML
+Building the project from commandline
+Plugins, Repositories, Maven lifecycle goals
+Create a Maven Project in Eclipse, Writing Unit Tests
+Building from the Command Line
+Skipping Tests
+Skipping tests in eclipse
+Dependency Management
+Build the project
+Create the Parent POM, Update the Child POMs, Build the multi module project, The Six Scopes
 
 
 
+- Project Management Tool 
+  - Maven 
+  - Gradle 
+  - ivy 
+  - sbt... 
 
+
+
+```
+	class Hello {}
+```
+
+> mvn validate 
+
+> mvn install 
+
+> mvn package 
+
+> mvn clean package 
+
+
+- Working on Maven 
+	- IDE (Eclipse)
+	- Command line 
+    	- mvn --version  		
+
+>  mvn archetype:generate -DgroupId=com.naveen -DartifactId=java-works-testing1 -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+> cd java-works-testing 
+
+> mvn install 
+
+> java -cp ./target/java-works-testing-1.0-SNAPSHOT.jar com.naveen.App
+
+> mvn install -> it will compile -> test -> then only only install will take place if there are any error / test case failure 
+  then install is not completed you can ignore tests by below command 
+
+> mvn -DskipTests=true install 
+
+```
+-- to set path 
+
+/Volumes/Kanchan/Softwares/maven/maven-3.8/bin
+d:\somefolder\somefolder\maven\maven-3.8\bin
+setting the path 
+1. hit start -> type env -> look for environment variable -> user variable -> look for path -> add the copied text 
+
+```
+
+
+1. log4j 
+2. slf4j 
+3. lockback 
