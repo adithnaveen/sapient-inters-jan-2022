@@ -46,8 +46,9 @@ Java -
 2. Eclipse - https://www.eclipse.org/downloads/packages/
 3. GitBash - https://git-scm.com/downloads
 4. VS Code - https://code.visualstudio.com/download
-5. Jenkins - 
-6. Docker - 
+5. Jenkins - https://www.jenkins.io/download/
+6. Docker - https://www.docker.com/products/docker-desktop
+7. Maven - https://maven.apache.org/download.cgi
 
 
 # Day 1 
@@ -307,8 +308,8 @@ Going Remote
 8. Have a .gitignore file 
 
 
-
-
+Question: 
+Satyaa - when conflits occur ? 
 
 
 
