@@ -402,3 +402,104 @@ setting the path
 1. Create a maven project in bitbucket where the repository is create 
 2. 
 
+
+<hr >
+
+# Day 3 
+
+<hr >
+
+
+
+## Tools and Packages - Jenkins	
+- Introduction to Jenkins UI
+- Keep playing with your first Job
+- Redirect your first Job's output
+- Learn how to execute a bash script from Jenkins
+- Learn how to create a Jenkins list parameter with your script
+- Introduction to Pipeline
+- Introduction to Jenkinsfile
+- Install the Jenkins Pipeline Plugin
+Create your first Pipeline
+- Add multi-steps to your Pipeline
+- Retry
+- Timeouts
+Environment variables
+- Credentials
+- Post actions 
+
+
+
+# Teams 
+
+- Satyaa, Mohit, Anurag - Chethan   - t1 
+- Gaurav, Chethan - Adil - t2 
+- Adil, Sumanth - Ayushi -t3 
+- Ayushi, Yashika - Ritu  - t4 
+- Ritu, Ashish - Vibhanshu - t5 
+- Vibhansu , Ojasvi - Sumedh - t6 
+- Sumedh, Yuvraj - Gurpreet - t7 
+- Gurpreet, Kushal - Nischal - t8 
+- Nischal, Priya - Rahul - t9 
+- Rahul, Sangita - Pulkit - t10
+- Sneha, Pulkit - Roshini - t11 
+- Roshini, Manshu - Satyaa - t12
+
+
+Scurm Master 
+- Pull Request 
+- Validate what is expected and delivery 
+- Do a dry run for the team 
+
+
+- zip 
+- rar 
+- jar 
+- war 
+
+
+
+$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+Check console output at $BUILD_URL to view the results.
+
+
+```
+pipeline {
+    agent any
+
+    stages {
+        stage('build') {
+            steps {
+                echo 'i can do some building here '
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'test stage goes here '
+            }
+        }
+        stage('deployment') {
+            steps {
+                echo 'deployment stage '
+            }
+        }
+
+    }
+}
+
+```
+
+
+1. create maven project in the branch called "maven-jenkins-works"
+2. in the source main write a method 
+   
+   ```
+		public class Hello {
+			public String hi() { return "Sapient";}
+		}
+   ```   
+3. Write a test case to assert "Sapient" with "Sapient" 
+4. Create a Jenkinsfile in the server and build the application 
+
+
