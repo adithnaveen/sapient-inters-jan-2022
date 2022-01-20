@@ -314,31 +314,31 @@ Satyaa - when conflits occur ?
 
 <hr >
 
-#Day 2 
+# Day 2 
 
-### Tools and Packages	
+## Tools and Packages	
 APPLICATION PACKAGING AND BUILD TOOLS 
 (MAVEN/GRADLE)
 
 
-Introduction
-Why Maven?
-Introduction to debugging
-Install Java(Latest)
-Install Eclipse(Latest)
-Configure Tomcat in eclipse
-Web projects and eclipse settings
-Maven Installation and Setup
-POM XML
-Building the project from commandline
-Plugins, Repositories, Maven lifecycle goals
-Create a Maven Project in Eclipse, Writing Unit Tests
-Building from the Command Line
-Skipping Tests
-Skipping tests in eclipse
-Dependency Management
-Build the project
-Create the Parent POM, Update the Child POMs, Build the multi module project, The Six Scopes
+- Introduction
+- Why Maven?
+- Introduction to debugging
+- Install Java(Latest)
+- Install Eclipse(Latest)
+- Configure Tomcat in eclipse
+- Web projects and eclipse settings
+- Maven Installation and Setup
+- POM XML
+- Building the project from commandline
+- Plugins, Repositories, Maven lifecycle goals
+- Create a Maven Project in Eclipse, Writing Unit Tests
+- Building from the Command Line
+- Skipping Tests
+- Skipping tests in eclipse
+- Dependency Management
+- Build the project
+- Create the Parent POM, Update the Child POMs, Build the multi module project, The Six Scopes
 
 
 
@@ -395,3 +395,92 @@ setting the path
 1. log4j 
 2. slf4j 
 3. lockback 
+
+
+
+<hr >
+
+# Day 3 
+
+<hr >
+
+
+
+## Tools and Packages - Jenkins	
+- Introduction to Jenkins UI
+- Keep playing with your first Job
+- Redirect your first Job's output
+- Learn how to execute a bash script from Jenkins
+- Learn how to create a Jenkins list parameter with your script
+- Introduction to Pipeline
+- Introduction to Jenkinsfile
+- Install the Jenkins Pipeline Plugin
+Create your first Pipeline
+- Add multi-steps to your Pipeline
+- Retry
+- Timeouts
+Environment variables
+- Credentials
+- Post actions 
+
+
+
+# Teams 
+
+- Satyaa, Mohit, Anurag - Chethan 
+- Gaurav, Chethan - Adil 
+- Adil, Sumanth - Ayushi
+- Ayushi, Yashika - Ritu 
+- Ritu, Ashish - Vibhanshu 
+- Vibhansu , Ojasvi - Sumedh
+- Sumedh, Yuvraj - Gurpreet
+- Gurpreet, Kushal - Nischal
+- Nischal, Priya - Rahul 
+- Rahul, Sangita - Pulkit 
+- Sneha, Pulkit - Roshini 
+- Roshini, Manshu - Satyaa 
+
+
+Scurm Master 
+- Pull Request 
+- Validate what is expected and delivery 
+- Do a dry run for the team 
+
+
+- zip 
+- rar 
+- jar 
+- war 
+
+
+
+$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+Check console output at $BUILD_URL to view the results.
+
+
+```
+pipeline {
+    agent any
+
+    stages {
+        stage('build') {
+            steps {
+                echo 'i can do some building here '
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'test stage goes here '
+            }
+        }
+        stage('deployment') {
+            steps {
+                echo 'deployment stage '
+            }
+        }
+
+    }
+}
+
+```
