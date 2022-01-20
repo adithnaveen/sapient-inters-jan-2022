@@ -501,5 +501,6 @@ pipeline {
    ```   
 3. Write a test case to assert "Sapient" with "Sapient" 
 4. Create a Jenkinsfile in the server and build the application 
-
+5. install blue ocean 
+6. 
 
