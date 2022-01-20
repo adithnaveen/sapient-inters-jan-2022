@@ -395,3 +395,10 @@ setting the path
 1. log4j 
 2. slf4j 
 3. lockback 
+
+
+
+
+1. Create a maven project in bitbucket where the repository is create 
+2. 
+
