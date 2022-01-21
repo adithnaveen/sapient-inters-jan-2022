@@ -563,9 +563,38 @@ SDET -> Software Developer Enginer & Tester
 - Constructors, default ,paremetric
 - Methods 
 - Packaging
-- Encapsulation
+- Encapsulation - with Access Specifiers 
 - Abstraction
 - Inheritence 
+  - is-a  - Car is a vehicle, human is a animal - verticle inheritance 
+  - has-a - car has a streeing, human has a eye - horizontal 
+
+```
+	class Employee {
+		private int empId;
+		private Name name; 
+		private double epmSal;
+	}
+
+	class Customer {
+		private int custId; 
+		private double custIncome; 
+		private Name name;
+	}
+	class Student {
+		private int sId; 
+		private Name name; 
+	}
+
+	class Name {
+		private String firstName; 
+		private String lastName; 
+		private String middleName; 
+
+	}
+```
+
+
 - Polymorphism 
 - static (block, variable, method )
 
@@ -614,6 +643,27 @@ SDET -> Software Developer Enginer & Tester
 	cin >> n; 
 ```
 
+- destructor 
+
+```	
+	-  in C
+
+	main() {
+		int *ptr; 
+		ptr = int * malloc(sizeof(int)* 44); 
+
+		.. 
+		free(ptr); 
+	}
+
+	- in C++ 
+	class Employee {
+		Employee() {}
+		~Employee() {}
+	};
+
+```
+
 
 - in C we call it as function 
   - will always return value 
@@ -659,3 +709,42 @@ SDET -> Software Developer Enginer & Tester
 		static variables are called as class level variables 
 	- Local variable section - this section only resides in the memory till the enclsing bracket and 
 		and there is no garbage collection concept here 
+
+
+
+<hr >
+
+# Project Statement  - CLI 
+1. Trainer Module 
+   1. Shall have profile 
+      1. Trainer Name, Qualification, number of years of exp, [technologies known], [companies trained], 
+      2. Register 
+         - Given the application is laoded on the system 
+         - When the trainer enter firstname, email, password, confirm password 
+         - And pressess '0' to save
+         - Then save the details to the database 
+         
+      3. Login 
+      4. Dashboard 
+      5. Forgot password 
+      6. Trainer Calendar
+      7. Update personal profile  
+      8. ....
+2. Toc Module 
+   1. Subject, Pre-requisites, Duration, course oucome, [line item [ sub-line-itme ]] - is done by trainer / SME 
+   2. Type of program (Technical, Domain , Softskills, Behavioural... )
+   3. 
+3. Employee Module - calendar,Trainers details, TOC, class room 
+   1. class room name 
+   2. class room trainer 
+   3. Trainer feedback 
+   4. Class Room 
+
+- Functional Techno 
+- NFR - Non Functional Requirement 
+	- The system should always exit gracefully 
+	- The system should respond in stipulated time 
+	- The system shall not have the failover min promise uptime 99.99 
+	- 
+
+- BDD  - Given When Then And But 
