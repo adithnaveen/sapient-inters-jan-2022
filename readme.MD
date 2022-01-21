@@ -504,3 +504,158 @@ pipeline {
 5. install blue ocean 
 6. 
 
+
+# Day 4 
+
+1. working with junit 
+2. junit with jenkins 
+3. what is this all about assertxxxx 
+4. why/ when are we using pipeline and parameters 
+5. where are we using jenkins in realtime 
+6. why there is versioning in jenkins file 
+
+
+- create a runnable jar 
+- 
+
+```
+	write a program to say hi to user 
+
+// development will come later 
+	public String sayHi(String name) {
+		return "Hi " + name; 
+	}
+
+// first test 
+	public void testSayHi() {
+		String name ="Adil"; 
+		String expectedReturn = "Hi " + name; 
+		assertEqulas(expectedReturn , sayHi(name));
+	}
+
+```
+
+
+SDET -> Software Developer Enginer & Tester 
+
+
+
+- in our class we had used junit -> 4.12 
+- in adil pom.xml ther jutni is 3.8.x 
+  ```
+	class MyTestCase extends Testcase  {
+
+	}
+  ```
+
+
+
+## Core Java, Java Introduction	
+  
+
+- Java Basics 
+- Classes 
+- Abstract Classes 
+- Mutable Immtable classess 
+- Interfaces 
+- Compilers  - Javac
+- JRE/JDK 
+- Constructors, default ,paremetric
+- Methods 
+- Packaging
+- Encapsulation
+- Abstraction
+- Inheritence 
+- Polymorphism 
+- static (block, variable, method )
+
+
+
+- c program 
+- native programming language 
+- in Windows it works only in windows - .exe file 
+- in mac it works only in mac - a.out 
+- there are different set of libraries / implementation for diff operating system 
+- 1972 - Dennis Ritches wrote C programming - Unix 
+- C language is very fast 
+- in 1992 - Games Gostling - OAK - Semiconductor devices (unfortunately failed)
+- 1993 - java C++ (bjarne Strustrap)
+```
+	#define main mymain
+	int * function () {}
+	
+	void mymain(int *p, char * args) { -> the main function will always return to underlying OS 
+		printf("Hi"); 
+	}
+```
+
+
+## Java  
+- Platform Independent 
+- Threads 
+- Collections 
+- Excpetion 
+- OOPS 
+
+
+
+```
+	public class Hello  {
+		public static void main(String [] args) {
+			System.out.println("Hello"); 
+		}
+	}
+```
+
+
+```
+	scanf("%d", &n);   -> hi("hello", "peter"); 
+	#include <iostream>
+	cin >> n; 
+```
+
+
+- in C we call it as function 
+  - will always return value 
+- in Java we call it as method
+  - methods are inside the class  
+  - may, may not return value when needed it can return more than 1 value 
+
+
+
+
+## conventions 
+
+1. All variables shall be camel case  -> empId, empName, empSalary,storeDataBaseFlag
+2. all methods shall be in cambel case -> getEmployeeRecord(), setEmployeeRecord(), viewBalance() 
+3. all package names shall be in lower case -> com.sapeint, com.yourcompany 
+4. all constants in uppercase -> PI, COMPANY_NAME 
+
+
+## Specifiers and modifiers 
+1. Specifiers 
+   1. public 
+   2. private - varibles or mehtods are only visible inside the class 
+   3. protected
+   4. default(package)
+
+2. Modifiers 
+   1. static
+   2. abstract
+   3. synchronized 
+
+## class vs object 
+1. class is a blue print 
+2. Object is instance of blue print 
+
+## OO Behaviour -Java 
+- Every class in java has a implicit super class called Object 
+
+
+- Types of memory 
+	- Heap Memory - expadable and shrinkable memory 
+	- Mehtod Section - this memory section is "singleton" and will be associated with the methods - stack
+	- Static section - this is kept in static section and this is also singleton many times 
+		static variables are called as class level variables 
+	- Local variable section - this section only resides in the memory till the enclsing bracket and 
+		and there is no garbage collection concept here 
