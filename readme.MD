@@ -877,3 +877,12 @@ SDET -> Software Developer Enginer & Tester
   - try - (try - (try - (try - (try - catch) catch)  catch) catch) - catch 
   - try (open the file / db connection ) - catch (handle the case ) - finally 100% (close)
   - try - finally 
+  - throw - is at statement level 
+  - throws - is at method level 
+
+
+- NameTooShortException 
+  - Surround It With try-catch 
+  - throws 
+
+
