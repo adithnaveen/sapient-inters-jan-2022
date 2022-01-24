@@ -1,10 +1,10 @@
 package com.naveen.day4.isaworks;
 
-public class Vehicle {
-	public Vehicle() {
-		System.out.println("Vehicle Constructor..");
-	}
-	public void move() {
-		System.out.println("Vehicle is moving ");
+public abstract class Vehicle {
+	
+	public abstract void move();
+	
+	public void licence() {
+		System.out.println("All Driver should have licence");
 	}
 }

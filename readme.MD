@@ -748,3 +748,132 @@ SDET -> Software Developer Enginer & Tester
 	- 
 
 - BDD  - Given When Then And But 
+
+
+
+-- 
+
+
+# Day 5 
+
+- [x]  Java Basics 
+- [x] Classes 
+- Abstract Classes 
+- [x] Mutable Immtable classess 
+- [x] Interfaces 
+- [x] Compilers  - Javac
+- [x] JRE/JDK 
+- [x] Constructors, default ,paremetric
+- [x] Methods 
+- [x] Packaging
+- [x] Encapsulation - with Access Specifiers 
+- [x] Abstraction
+- [x] Inheritence 
+  - is-a  - Car is a vehicle, human is a animal - verticle inheritance 
+  - has-a - car has a streeing, human has a eye - horizontal 
+- [x] Polymorphism 
+  - Compile Time  - Overloading - same method name diffrent signature in same class 
+  - Run Time - Overriding - same method name, same signatures, different classes 
+- [x] comparable interface 
+- [x] static (block, variable, method )
+
+
+
+### EXCEPTION HANDLING 	
+-  Using Efficient Exception Handling 
+-  Resource Clean up Rules and Finally. 
+-  Custom Exception Hierarchy 
+-  Exception Wrapper 
+-  Exception Loggings
+-  partial deligation 
+
+
+### Mutable Immtable classess
+
+```
+	public class Device {
+		private int dId; 
+		private String dName; 
+
+		Device() {}
+		public void setDId(int dId) {
+			this.dId = dId;
+		}
+		.. getter 
+		public void setdName(String dName) {
+			this.dName = dName;
+		}
+		.. getter 
+	}
+
+	Devide d = new Device();
+	d.setDId(101); 
+	d.setDName("Laptop"); 
+	System.out.println(d); 
+	
+	d.setDId(102); 
+	d.setDName("Key Board"); 
+	System.out.println(d); 
+	
+	--
+
+	public class Device {
+		private int dId; 
+		private String dName; 
+
+		Device(int dId, String dName) {
+			this.dId = dId; 
+			this.dName = dName; 
+		}
+	 
+		.. getter 
+		.. getter 
+	}
+
+	Devide d = new Device(101, "Laptop");
+	 
+	System.out.println(d); 
+	
+ 
+	System.out.println(d); 
+```
+
+
+- Abstract method 
+  - If you dont hav the implementation then mark the class with ;, and method shall have abstract as access modifier 
+  - if a class has atleast 1 abstract method then the class should be marked as abstract 
+  - if the class is marked as abstract then you cannot create an object of the abstract class but you can hold the reference 
+  - reference -> is a pointer to instance  vs instance  -> memory allocation is done 
+  - the abstract can have implementation if needed 
+  - In java Multiple inheritence is not allowed 
+
+
+- Interfaces 
+  - Interfaces are 100% abstract
+  - In interfaces you cannot have any concrete implementation 
+  - In interfaces you cannot have variables -> final 
+  - Minimum access specifier in interfaces is public 
+  - Interfaces has nothing to with classes so nothing to do with Object 
+  - A class can implement an interface/s 
+  - An interface can extends interface / s
+  - An interface cannot extend or implement the class 
+
+
+- comprable 
+
+```
+	Emp
+		empId (asc/desc)
+		empName
+		empSal
+
+	- Sneha - Nischal  -> 1, 0, -1 
+```
+
+
+
+### EXCEPTION HANDLING 	
+  - try - catch 
+  - try - (try - (try - (try - (try - catch) catch)  catch) catch) - catch 
+  - try (open the file / db connection ) - catch (handle the case ) - finally 100% (close)
+  - try - finally 

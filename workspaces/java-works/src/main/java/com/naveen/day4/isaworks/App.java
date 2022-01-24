@@ -3,6 +3,7 @@ package com.naveen.day4.isaworks;
 public class App {
 	public static void main(String[] args) {
 
+	
 		Vehicle vehicles[] = new Vehicle[5];
 
 		vehicles[0] = new Car();
