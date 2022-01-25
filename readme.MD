@@ -885,4 +885,69 @@ SDET -> Software Developer Enginer & Tester
   - Surround It With try-catch 
   - throws 
 
+1. Need to complete the user stories 
+2. Create Bean classes for the project 
 
+
+-- 
+# Day 6 
+--
+Core Java -> GENERICS 
+- IO 
+  - [x] Reader / Writer Classess - .txt 
+  - [x] InputStream / OutputStream Classess - non text class (.mp4, .docx, .jpg...) -> .ser 
+  - Scanner 
+- Generics basics and implementation
+
+- How to Submit in Assessment 
+  > git clone https://tools.publicis.sapient.com/bitbucket/scm/batch/testing-assessment.git
+  
+  > git checkout main 
+
+  > git checkout -b navks-naveen main 
+
+  > CODE 
+
+  > git add . 
+
+  > git commit -m "completed assessment"
+
+  > git push origin navks-naveen
+
+- How to write code for Project 
+
+```
+	scanf("%d", &i); 
+
+	cin >> i; 
+```
+
+List of Topics For Tech Connect: 
+1. 5g Edge Computing 
+2. TRIE Algorithm 
+3. Memory Managment in C, C++, Java 
+4. Need of Cloud Native Application in Today's world 
+5. Data Structures and Best Practices 
+6. Diff between SQL / NoSQL 
+7. A AA AAA Compliance 
+8. OSWAP 
+9. Open API 3.0 
+10. Library V/S Framework (React vs angular)
+11. AWS And its application 
+12. Virtualization / Hypervisor 
+13. Generation Of Network 
+14. BlockChain 
+15. Containarization and Orchestraction 
+16. RPA 
+17. NFT 
+
+
+
+- Generics 
+- 1.5 jdk 
+- (Employee, TeamLeader, Project Manager, CEO, COO, LND, Director ) -> Person 
+
+class MyArray{
+	Object [] emp; 
+}
+ 

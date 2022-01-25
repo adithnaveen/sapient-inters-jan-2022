@@ -1,0 +1,2 @@
+101:naveen:1234:java,reactjs,angular:blr
+102:vinod:3322:salesforce,java,kotlin:mys

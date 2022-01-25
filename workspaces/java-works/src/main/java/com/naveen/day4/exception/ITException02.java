@@ -2,6 +2,8 @@ package com.naveen.day4.exception;
 
 public class ITException02 {
 	
+	
+	
 	public static void checkName(String name) throws NameTooShortException {
 		if(name.length()<6) {
 				throw new NameTooShortException("Name " + name + " is not as per standards");
