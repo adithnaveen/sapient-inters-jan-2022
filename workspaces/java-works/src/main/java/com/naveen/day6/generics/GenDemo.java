@@ -34,5 +34,7 @@ public class GenDemo {
 		 System.out.println(genEmployee.getObj());
 		 genEmployee.showType();
 		 
+		 
+		
 	}
 }

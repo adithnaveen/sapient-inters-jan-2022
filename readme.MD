@@ -451,7 +451,6 @@ Scurm Master
 - Validate what is expected and delivery 
 - Do a dry run for the team 
 
-
 - zip 
 - rar 
 - jar 
@@ -951,3 +950,87 @@ class MyArray{
 	Object [] emp; 
 }
  
+
+
+# Day 7 
+
+- Generics basics and implementation
+
+T []  -  1,2,3,4,5,6 - and find the average 
+T []  -  1.4,2.6,3.3,4.1,5.8,65.5 - and find the average 
+T []  -  "Harish", "sumedh", "Vibhanshu".... 
+T []  - new Emp("Harish"), new Emp("Sumedh"), new Emp("Vibhanshu"), 
+
+
+1,2 = 1.5 -> float or double 
+
+- sorting min / max 
+- 10,2,3,4,5,6
+
+[0] = 2
+[1] = 10 
+[2] = 3 
+
+- to pass generic object 
+-  Gen<?>  genObject; 
+-  Gen<Object> genObject 
+-  Gen<Emp> genEmp; 
+-  Gen<Integer> genInteger; 
+-  Gen<? extends Number> getNumberType; 
+
+## COLLECTIONS 	
+- Collection Interface
+- Iterator Interface
+- Set Interface
+- List Interface
+- Map Interface
+- List Iterator Interface
+- Sorted Set Interface
+- Sorted Map Interface
+- Unmodifiable Collection
+- Synchronized Wrappers
+- Thread Safety
+- Collections Utility Classes add more topics to cover Collection framework in depth
+
+
+```
+	int arr[]= new int[4]; 
+	arr[0] = 10; 
+	arr[1] = 20; 
+	arr[2] = 30; 
+	arr[3] = 40; 
+
+	int arr1[] = new int[10]; 
+	// copy all the elements of arr -> arr1
+	arr[4] = 50; 
+	// rename arr1 -> arr 
+```
+
+- Queue 
+- Set
+  - HashSet - store first strategy  
+  - TreeSet - in sorted order - retrive first strategy 
+
+
+-- before overriding hashcode / equals 
+Laptop [laptopId=102, laptopName=Dell -Yoga, laptopPrice=2200.0], Stored @ 1705929636
+Laptop [laptopId=102, laptopName=Dell -Yoga, laptopPrice=2200.0], Stored @ 1297685781
+Laptop [laptopId=101, laptopName=Apple MacBookPro, laptopPrice=2000.0], Stored @ 511833308
+
+- after overriding hashcode 
+Laptop [laptopId=101, laptopName=Apple MacBookPro, laptopPrice=2000.0], Stored @ 65
+Laptop [laptopId=102, laptopName=Dell -Yoga, laptopPrice=2200.0], Stored @ 68
+Laptop [laptopId=102, laptopName=Dell -Yoga, laptopPrice=2200.0], Stored @ 68
+
+- after overriding hashcode / equals 
+Laptop [laptopId=101, laptopName=Apple MacBookPro, laptopPrice=2000.0], Stored @ 65
+Laptop [laptopId=102, laptopName=Dell -Yoga, laptopPrice=2200.0], Stored @ 68
+
+
+- OLTP - Online Transaction Processing  
+- OLAP - Online Analytical Processing - Informatica, Tableu, BI Report, PowerBI etc... 
+
+- Map 
+- <K, V> -> Map<String, Account>, Map<String, Integer>, Map<String, List<String>>
+
+
