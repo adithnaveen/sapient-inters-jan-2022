@@ -1031,6 +1031,115 @@ Laptop [laptopId=102, laptopName=Dell -Yoga, laptopPrice=2200.0], Stored @ 68
 - OLAP - Online Analytical Processing - Informatica, Tableu, BI Report, PowerBI etc... 
 
 - Map 
+
+```
 - <K, V> -> Map<String, Account>, Map<String, Integer>, Map<String, List<String>>
 
+```
 
+
+# Day 8 - 28-Jan-2022
+
+
+## MULTI THREADING AND PARALLEL COMPUTE	
+- Concurrency API For java 
+- Executors Framework 
+- Lambda and threads 
+- Futures and Callable , Completable
+
+
+
+
+## Intrim Demo  - Deliverables
+1. create a CLI application which shall have the complete application (TMS) running with the DBMS 
+2. Expose to have test driven development approach 
+3. Write unit test cases for the code written coverage should be min 60% - SonarQube 
+4. The application shall have error handling mechanism (should use explicit errors) 
+5. Application should be deployed with CI/CD - Jenkins 
+6. application building should be done using Maven 
+7. Java doc to be generated 
+   1. // single line 
+   2. /*  multi line */ 
+   3. /** java doc */ 
+   4. /Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_15.0.2.v20210201-0955/jre/bin/javadoc
+8. Plant UML 
+9.  multithreading to be shown atleast 1 use case (with executor prefer) + syncronizers
+10. Create a jar file and import 
+11. Use of loggers - slf4j (logback / log4j)
+
+- app 
+  - src/main 
+    - com.impl
+      - shall have only main 
+    - com.beans
+      - shall have all beans also called as re-usable component 
+    - com.service
+      - all validation code shall go here 
+    - com.controller 
+      - will talk to file / db 
+    - com.exception 
+      - create all you custom exception's here 
+    - com.util
+      - accept number 
+```
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
+	System.out.println("Enter Your Name" ); 
+	String name = br.readLine();
+	// start processing 
+
+
+	class ReadUserData{
+		static BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
+	
+		public static String getStringValue(String title) {
+			System.out.println("Enter " + title); 
+			return br.readLine();
+		}
+
+		public static Integer getStringValue(String title) throws InvalidNumberException{
+			System.out.println("Enter " + title); 
+			return Integer.parseInt(br.readLine());
+		}
+	}
+
+	class Impl {
+		void hi() {
+			String userName = ReadUserData.getStringValue("Name");
+		}
+	}
+
+```
+
+
+```
+- Map<String, String>
+- Map<String , List<String>>
+- Map<String, Map<String, List<String>>>
+```
+
+-- threads 
+- 300000000000 person invoking it -> 2nd person have to wait for 24 ms, 3rd person have to wait for 48ms 
+- Aging - piling up, each person in the queue starts looking for opportunity 
+```
+	main() {	- 5ms 
+		hi(); 
+	}
+	hi(){ - 7ms 
+		hello();
+	}
+
+	hello(){- 10 ms 
+	.. 
+		cya();
+		... 
+	}
+	cya(){ - 2 ms 
+		// some BL 
+	}
+```
+
+- 2.4 ghz - 2400000000 * 4
+1. synchrounous
+2. Asynchronous
+3. Reactive 
+4. 

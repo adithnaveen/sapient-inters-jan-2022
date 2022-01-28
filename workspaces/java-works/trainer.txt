@@ -1,2 +1,4 @@
 101:naveen:1234:java,reactjs,angular:blr
 102:vinod:3322:salesforce,java,kotlin:mys
+good-morning=Good Morning, Shuboday, Shubodaya, Suprabath 
+good-evening=Good Evening, Suhuba Sanje, SubhaSandya 

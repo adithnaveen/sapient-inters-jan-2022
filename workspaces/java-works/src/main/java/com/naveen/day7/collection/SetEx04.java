@@ -1,6 +1,7 @@
 package com.naveen.day7.collection;
 
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -50,8 +51,7 @@ public class SetEx04 {
 			System.out.println(temp +", Stored @ " + temp.hashCode());
 		}
 		
-	
-		
+
 		Set<Laptop> laptops1 = new TreeSet<Laptop>(LaptopSorter.sortByPriceAsc); 
 
 		laptops1.add(new Laptop(456, "Apple MacBookPro", 2000.0)); 
