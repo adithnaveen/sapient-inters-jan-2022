@@ -1143,3 +1143,54 @@ Laptop [laptopId=102, laptopName=Dell -Yoga, laptopPrice=2200.0], Stored @ 68
 2. Asynchronous
 3. Reactive 
 4. 
+
+
+
+# Day 9 
+
+
+# Teams 
+
+- Satyaa, Mohit, Anurag - Chethan   - t1  - will show intrim demo today 
+- Gaurav, Chethan - Adil - t2 - bean classes are created 
+- Adil, Sumanth - Ayushi -t3 - need to work nothing much to show 
+- Ayushi, Yashika - Ritu  - t4 - sent pull req, menu driven part is done, bean classes are completed 
+- Ritu, Ashish - Vibhanshu - t5 - bean classes are done, reg, login is done, there are some changed, PR Raised 
+- Vibhansu , Ojasvi - Sumedh - t6 - maven project is created, basic navigation functionality, need to create bean classes 
+- Sumedh, Yuvraj - Gurpreet - t7 - there 
+- Gurpreet, Kushal - Nischal - t8 - bean classes are created, login part 
+- Nischal, Priya - Rahul - t9 - could not show much 
+- Rahul, Sangita - Pulkit - t10 - created maven project, employee module added, completed main file, wokring on login module 
+- Sneha, Pulkit - Roshini - t11 - its is still at conceptual leve 
+- Roshini, Manshu - Satyaa - t12 - working on bean classes, and has exam's 
+
+
+- Lambda 
+
+- x -> x * x -> y -> y * y 
+- (int x, int y) -> {return x +y ;}
+
+- any interface which has exactly 1 instance method then that interface is called as funcational interface 
+
+```
+	interface Consumer <T> {
+		void accept(T t);
+	}
+
+	interface Predicate<T> {
+		boolean test(T t);
+	}
+
+
+	Consumer c = new Customer(){
+		void accept(T t){
+			// your implemenation goes here 
+		}
+	}
+
+
+	Consumer  c = (t) -> {}
+```
+
+
+
