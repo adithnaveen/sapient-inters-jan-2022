@@ -2,7 +2,7 @@ package com.naveen.day9.java8;
 
 import java.util.stream.IntStream;
 
-public class LabmdaEx5 {
+public class LambdaEx5 {
 	public static void main(String[] args) {
 		new Thread(new Runnable() {
 

@@ -29,11 +29,8 @@ class LaptopSorter{
 			return (int) (o1.getLaptopPrice() - o2.getLaptopPrice()); 
 		}
 	}; 
-	static Comparator<Laptop> sortByPriceDesc = new Comparator<Laptop>() {
-		@Override
-		public int compare(Laptop o1, Laptop o2) {
+	static Comparator<Laptop> sortByPriceDesc = ( o1,  o2) -> {
 			return (int) (o2.getLaptopPrice() - o1.getLaptopPrice()); 
-		}
 	}; 
 }
 
