@@ -1194,3 +1194,71 @@ Laptop [laptopId=102, laptopName=Dell -Yoga, laptopPrice=2200.0], Stored @ 68
 
 
 
+# Day 10 
+
+STREAMS AND CONCURRENCY	
+- Introduction on Streams
+- Map, List, Set 
+- Filter 
+- Sorted
+- Collect 
+- for Each
+- reduce
+	- Parallel Computing using Streams.
+	- New String methods
+	- New File Methods 
+	- HTTP Client in Java 11
+
+
+-- with map 
+trainer.ser
+target
+pom.xml
+.classpath
+project
+.settings
+.project
+trainer.txt
+src
+
+
+-- without map 
+./trainer.ser
+./target
+./pom.xml
+./.classpath
+./project
+./.settings
+./.project
+./trainer.txt
+./src
+
+
+-- 
+Create a list of Trainers 
+	tId, tName, tSalary 
+	using stream display only tName in upper case 
+
+
+-- 
+> select * from emp; 
+
+> select empname, salary from emp; 
+
+> select empname, salary from emp where empsalary > 3000; 
+
+> select empname, salary from emp where empsalary > 3000 and city = 'blr'; 
+
+
+> select city, count(*), sum(salary), min(salary), max(salary), avg(salary)
+	 from emp where empsalary > 3000 and city = 'blr' 
+	 group by city; 
+
+- TODO 
+- Product 
+	- name, qty, price 
+
+1. for the name get the sum of qty 
+2. Group by with the qty / price 
+3. by any chance if there are repeated product then only unique to be stored 
+3. by any chance if there are repeated product then only unique to be stored only qty 
