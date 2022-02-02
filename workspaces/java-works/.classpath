@@ -35,5 +35,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="project"/>
+	<classpathentry kind="src" path="jdbc-works"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

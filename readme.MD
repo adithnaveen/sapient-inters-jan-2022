@@ -1259,6 +1259,115 @@ Create a list of Trainers
 	- name, qty, price 
 
 1. for the name get the sum of qty 
-2. Group by with the qty / price 
+2. Group by qty / price 
+{
+	3=[Product [name=keyboard, qty=3, price=78.0]], 
+	23=[Product [name=laptop, qty=23, price=1200.0]], 
+	56=[Product [name=mouse, qty=56, price=9.0]], 
+	10=[
+		Product [name=laptop, qty=10, price=1500.0], 
+		Product [name=mouse, qty=10, price=45.0], 
+		Product [name=adapter, qty=10, price=65.0]
+	]
+}
+
 3. by any chance if there are repeated product then only unique to be stored 
+
+
+{65.0=[adapter], 9.0=[mouse], 1200.0=[laptop], 78.0=[keyboard], 45.0=[mouse], 1500.0=[laptop]}
+
 3. by any chance if there are repeated product then only unique to be stored only qty 
+
+
+
+# Day 11 
+-- 
+
+- Satyaa, Mohit, Anurag - Chethan   - t1  - will show intrim demo today, 
+	- not much progrees need to work on IO  
+- Gaurav, Chethan - Adil - t2 - bean classes are created 
+	- not much progress 
+- Adil, Sumanth - Ayushi -t3 - need to work nothing much to show 
+	- No Progress 
+- Ayushi, Yashika - Ritu  - t4 - sent pull req, menu driven part is done, bean classes are completed 
+	- registration, employee registration is done 
+	- code is not push still 
+	- has raised the PR 
+- Ritu, Ashish - Vibhanshu - t5 - bean classes are done, reg, login is done, there are some changed, PR Raised 
+	- View profile employee and trainer 
+	- registration is completed 
+	- validation is pending 
+- Vibhansu , Ojasvi - Sumedh - t6 
+	- maven project is created, basic navigation functionality, need to create bean classes 
+	- not much progress from yesterday - vibhanshu was off 
+- Sumedh, Yuvraj - Gurpreet - t7 - 
+	- new code PR is not raise still 
+- Gurpreet, Kushal - Nischal - t8 
+	- bean classes are created, login part 
+	- working on login part 
+	- have got some code errors and working 
+- Nischal, Priya - Rahul - t9 
+	- could not show much 
+	- reg part is done 
+	- working on login part 
+	- some code problem to validate the data from the file 
+- Rahul, Sangita - Pulkit - t10 
+	- created maven project, employee module added, completed main file, wokring on login module 
+	- working on refractoring 
+	- working on employee login 
+	- need to raise the PR 
+- Sneha, Pulkit - Roshini - t11 - its is still at conceptual leve 
+	- not present 
+- Roshini, Manshu - Satyaa - t12 
+	- working on bean classes, and has exam's 
+	- not much progress due to exams 
+	- has exams till 5th feb 
+
+
+
+
+## topics 
+- HTTP Client in Java 11
+
+
+
+- JDBC and ORM (Hibernate)	
+- JDBC Architecture
+- Connection
+- Statement, PreparedStatement & CallableStatement
+- ResultSet
+- Difficulties in JDBC
+- Overview of ORM
+- Hibernate basics
+- Hibernate setup
+- CRUD operations
+
+
+## jdbc working 
+
+>  create database sapientdb;
+
+> use sapientdb; 
+
+> create table employee(
+	empid int primary key, 
+	empname varchar(30), 
+	empsal decimal(9,2), 
+	empemail varchar(50)
+	); 
+
+> show tables; 
+
+> desc employee;
+
+
+
+
+
+Statement -> only for sql statement 
+PreapredStatement -> statement + batch updates 
+CallableStatement -> preparedstatement + invokes functions / procedures 
+
+- arrays starts from 0 
+- positional paramener starts from 1 
+- result set starts from -1 
