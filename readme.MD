@@ -1427,7 +1427,7 @@ CallableStatement -> preparedstatement + invokes functions / procedures
 
 # Day 12
 
-- Hibernate basics
+-   Hibernate basics
 - Hibernate setup
 - CRUD operations
 - Association mapping 
@@ -1438,3 +1438,8 @@ CallableStatement -> preparedstatement + invokes functions / procedures
 
 - confirugation 
 	- hibernate.cfg.xml 
+
+- for selecting the record in hibernate 
+	- Criteria  - POJO 
+	- hql 
+	- native (sql)	

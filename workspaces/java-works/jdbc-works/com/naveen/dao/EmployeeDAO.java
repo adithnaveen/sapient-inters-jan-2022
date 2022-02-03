@@ -30,6 +30,12 @@ public class EmployeeDAO  implements IEmployeeDAO{
 			return ps.executeUpdate()>0;
 		} catch (SQLException e) {
 			e.printStackTrace();
+		}finally {
+			try {
+				ps.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} 
 		}
 		return false; 
 	}
