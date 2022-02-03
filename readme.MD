@@ -1371,3 +1371,70 @@ CallableStatement -> preparedstatement + invokes functions / procedures
 - arrays starts from 0 
 - positional paramener starts from 1 
 - result set starts from -1 
+
+
+-- hibernate 
+
+```
+	@Entity 
+	class Employee{}
+	Employee emp = new Employee(); - life span is only with in java 
+```
+
+
+```
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost/navdb</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">kanchan@1</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">2</property>
+
+        <!-- SQL dialect --> 
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- Enable Hibernate's current session context -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">create</property>
+     
+
+     
+    </session-factory>
+
+</hibernate-configuration>
+```
+
+
+
+# Day 12
+
+- Hibernate basics
+- Hibernate setup
+- CRUD operations
+- Association mapping 
+- 1:N, N:1, 1:1, N:M Querying
+- Inheritance 
+- Criteria / HQL 
+
+
+- confirugation 
+	- hibernate.cfg.xml 
