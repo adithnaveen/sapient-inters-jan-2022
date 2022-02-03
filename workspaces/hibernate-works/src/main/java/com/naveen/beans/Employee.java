@@ -13,11 +13,11 @@ public class Employee {
 	private int empId; 
 	@Column(name="empname")
 	private String empName; 
-	private String empSal;
+	private double empSal;
 	
 	public Employee() { }
 
-	public Employee(int empId, String empName, String empSal) {
+	public Employee(int empId, String empName, double empSal) {
 		super();
 		this.empId = empId;
 		this.empName = empName;
@@ -40,11 +40,11 @@ public class Employee {
 		this.empName = empName;
 	}
 
-	public String getEmpSal() {
+	public double getEmpSal() {
 		return empSal;
 	}
 
-	public void setEmpSal(String empSal) {
+	public void setEmpSal(double empSal) {
 		this.empSal = empSal;
 	}
 
