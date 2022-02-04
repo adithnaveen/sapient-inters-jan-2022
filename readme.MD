@@ -1457,7 +1457,7 @@ CallableStatement -> preparedstatement + invokes functions / procedures
 
 DESIGN PATTERNS	 
 - Functional Programming Design principles 
-- Immutability
+- Immutability v/s Mutable 
 - Disciplined state
 - Pure functions and no side effects/disciplined states
 - First class functions and high order functions
@@ -1469,9 +1469,9 @@ DESIGN PATTERNS
 -  [x] Abstract Factory method pattern - TODO 
 - Template method pattern
 - [x] Builder pattern
-- [x]  Singleton
-- Chain of responsibility pattern
-- Command Pattern
+- [x] Singleton
+- [x] Chain of responsibility pattern
+- [x] Command Pattern
 
 
 -  programming started 
@@ -1576,4 +1576,3 @@ DispatcherServlet
 
 
 
-	

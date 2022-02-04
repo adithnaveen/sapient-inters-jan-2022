@@ -39,5 +39,6 @@
 	<classpathentry kind="src" path="dp-singleton"/>
 	<classpathentry kind="src" path="dp-factory"/>
 	<classpathentry kind="src" path="dp-builder"/>
+	<classpathentry kind="src" path="dp-command"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

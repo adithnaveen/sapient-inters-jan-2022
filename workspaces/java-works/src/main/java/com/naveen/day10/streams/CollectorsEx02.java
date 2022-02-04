@@ -27,7 +27,9 @@ public class CollectorsEx02 {
 		System.out.println(sumOfProducts);
 		
 		// group products by qty 
-		Map<Integer, List<Product>> groupByQty = list.stream().collect(Collectors.groupingBy(Product :: getQty));
+		Map<Integer, List<Product>> groupByQty = list
+					.stream()
+					.collect(Collectors.groupingBy(Product :: getQty));
 		System.out.println(groupByQty);
 		
 		System.out.println("--------------------");

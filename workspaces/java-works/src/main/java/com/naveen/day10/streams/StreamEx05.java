@@ -12,7 +12,8 @@ public class StreamEx05 {
 				new Trainer(23, "Becky", 5566) 
 				); 
 		
-		list.stream()
+		list
+			.stream()
 			.map(Trainer :: gettName)
 			.map(name -> name.toUpperCase())
 			.sorted((a,b) -> a.compareTo(b))
