@@ -12,6 +12,7 @@ import java.util.List;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
 public class App {
@@ -32,8 +33,10 @@ public class App {
 //		getAllEmployees(session);
 //		getSingleRecordQuery(session);
 //		getAllEmployeesHQL(session);
+//		getEmployeesWithCondition(session);
 		
-		getEmployeesWithCondition(session);
+//		getSingleRecordQuerySingleColumn(session);
+		getMultipleColumnWithCondition(session); 
 	}
 
 	private static void getEmployeesWithCondition(Session session) {
@@ -58,10 +61,37 @@ public class App {
 	// use criteria only 
 	
 	// select empname from employee
-	private static void getSingleRecordQuerySingleColumn(Session session) {}
+	private static void getSingleRecordQuerySingleColumn(Session session) {
+		CriteriaBuilder builder = session.getCriteriaBuilder(); 
+		CriteriaQuery<String> query = builder.createQuery(String.class);
+		Root<Employee> root = query.from(Employee.class);
+		query.select(root.get("empName")); 
+		session.createQuery(query).getResultList().forEach(System.out :: println);
+		
+	}
 	
 	// select empname, empsal from employee where empsal > 3000
-	private static void getSingleRecordQueryMultipleColumnWithCondition(Session session) {}
+	private static void getMultipleColumnWithCondition(Session session) {
+		CriteriaBuilder criteriaBuilder = session.getCriteriaBuilder();
+		
+		// return type 
+		CriteriaQuery<Object[]> query = criteriaBuilder.createQuery(Object[].class);
+		Root<Employee> root = query.from(Employee.class);
+		
+		Predicate greaterThan = criteriaBuilder.greaterThan(root.get("empSal"), 2000); 
+		
+		query.multiselect(root.get("empName"), root.get("empSal"))
+			.where(greaterThan).getOrderList(); 
+		
+		query.orderBy(criteriaBuilder.asc(root.get("empName"))); 
+		
+		 List<Object[]> resultList = session.createQuery(query).getResultList(); 
+		
+		for(Object [] temp : resultList) {
+			System.out.println("Name "+ temp[0] +", Salary "+ temp[1]);
+		}
+		
+	}
 	
 	private static void getSingleRecordQuery(Session session) {
 		CriteriaBuilder criteriaBuilder = session.getCriteriaBuilder(); 

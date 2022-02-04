@@ -1443,3 +1443,137 @@ CallableStatement -> preparedstatement + invokes functions / procedures
 	- Criteria  - POJO 
 	- hql 
 	- native (sql)	
+
+- in Data base we have constrains 
+	- name 
+	- not null 
+	- uniue 
+	- min val and max val etc 
+
+
+
+# Day 13 
+
+
+DESIGN PATTERNS	 
+- Functional Programming Design principles 
+- Immutability
+- Disciplined state
+- Pure functions and no side effects/disciplined states
+- First class functions and high order functions
+- Type systems
+- Referential transparency
+- Patterns in java for the functional Programmer 
+
+-  [x] Factory method pattern
+-  [x] Abstract Factory method pattern - TODO 
+- Template method pattern
+- [x] Builder pattern
+- [x]  Singleton
+- Chain of responsibility pattern
+- Command Pattern
+
+
+-  programming started 
+	- 197x - Cobol IBM 
+	- 1972 - Unix, C 
+	- 1980 - C++ OOPS 
+	- 1993 - Java 
+	- 1995 - GOF 
+
+```
+// singleton 
+class Company {
+	////
+}
+
+Employee emp = new Employee(); 
+emp.setEmpId(101); 
+emp.setEmpName("Nischal")
+... 
+emp.setLocation("Blr"); 
+emp.setLicence("some licence"); 
+emp.setCompany(company); 
+.... 
+
+
+Employee emp1 = emp.clone();
+emp1.setCompany(company); 
+
+
+- composite pattern 
+
+class Employee {
+	private int empId; 
+	private String empName; 
+	private List<Employees> manages; 
+
+}
+
+
+DispatcherServlet 
+
+```
+
+
+- Singleton
+	- for the class you can have only 1 instance 
+	- Eager 
+	- Lazy 
+
+-  factory dp 
+```
+	enum Cars {
+			MARUTI, MERCEDES, HYUNDAI 
+	}
+	class Car {
+		public static getCar(Cars car){
+			if(car.equlas(Cars.MARUTI)) {
+				return new Maruti();
+			} else if(car.equals(Cars.MERCEDES)){
+				return new Mercdes();
+			}else if(car.equals(Cars.HYUNDAI)){
+				return new Hyundai();
+			}
+			return null; 
+		}
+	}
+	class Maruti {
+		 Maruti(){
+			// constructin maruti 
+		}
+		public void bl() {}
+	}
+	class Mercedes{
+		 Mercedes(){
+			// constructin maruti 
+		}
+		public void bl() {}
+	}
+	class Hyundai{
+		 Hundai(){
+			// constructin maruti 
+		}
+		public void bl() {}
+	}
+	... 
+
+	implementation 
+	
+	Car car = Car.getCar(Cars.MARUTI); 
+	car = Car.getCar(Cars.MERCEDES); 
+
+```
+
+
+
+-  Builder pattern
+- select empname, empsal, empemail 
+	from employee 
+	where empsal > 3000 
+	and empcity ='blr' 
+	or empdesign in ('mgr', 'tl');
+
+
+
+	

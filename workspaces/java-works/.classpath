@@ -36,5 +36,8 @@
 	</classpathentry>
 	<classpathentry kind="src" path="project"/>
 	<classpathentry kind="src" path="jdbc-works"/>
+	<classpathentry kind="src" path="dp-singleton"/>
+	<classpathentry kind="src" path="dp-factory"/>
+	<classpathentry kind="src" path="dp-builder"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
