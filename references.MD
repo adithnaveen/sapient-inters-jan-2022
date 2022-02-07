@@ -20,9 +20,20 @@ https://en.wikipedia.org/wiki/First-class_function
 https://en.wikipedia.org/wiki/Higher-order_function#Java_(1.8+)
 
 
-
-
-
 ## Referential transparency in java 
 
 https://en.wikipedia.org/wiki/Referential_transparency#:~:text=Referential%20transparency%20and%20referential%20opacity,without%20changing%20the%20program's%20behavior.
+
+## head first design pattern 
+https://longbiao.spatial-crowdsensing.com/courses/scad/files/head-first-design-patterns-compressed.pdf
+
+
+## Design patterns 
+https://refactoring.guru/
+
+
+## sonarlint for Eclipse 
+https://marketplace.eclipse.org/content/sonarlint
+
+## sonarqube 
+https://www.sonarqube.org/downloads/

@@ -9,7 +9,7 @@ public class RemoteControl {
 	private Command switchOn; 
 	private Command switchOff; 
 	
-	public RemoteControl(IElectonicDevice device) {
+	public RemoteControl(final IElectonicDevice device) {
 		this.switchOn = new SwitchOnCommand(device); 
 		this.switchOff = new SwitchOffCommand(device); 
 	}

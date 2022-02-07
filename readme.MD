@@ -1575,4 +1575,194 @@ DispatcherServlet
 	or empdesign in ('mgr', 'tl');
 
 
+- Referential transparency
+
+
+```
+	x = 10; 
+	x = x+1; 
+	x = x+1; 
+
+	class Hi {
+		main(){
+			yy = doSomething(10)
+		}
+		public int doSomething(final int x) {
+			return x +1; 
+		}
+	}
+```
+
+- Abstract Factory Design pattern 
+- Stratergy  Design Pattern 
+
+
+
+
+# Day 14 
+
+
+
+- Satyaa, Mohit, Anurag - Chethan   - t1  - will show intrim demo today, 
+	- not much progrees need to work on IO  
+	- TOC part is left 
+	- hibernate is not done because of assessment - anurag 
+	- 
+- Gaurav, Chethan - Adil - t2 - bean classes are created 
+	- not much progress 
+	- reg, login  of emp and trainer 
+	- working on dashboard 
+	- still have not incorportated hibernate 
+	- custom excpetions are handled 
+
+- Adil, Sumanth - Ayushi -t3 - need to work nothing much to show 
+	- No Progress 
+	- employee, trainer and dashboard is done 
+	- have not connected with hibernate 
+	- no pr is raised 
+
+- Ayushi, Yashika - Ritu  - t4 - sent pull req, menu driven part is done, bean classes are completed 
+	- registration, employee registration is done 
+	- code is not push still 
+	- has raised the PR 
+	- app working with hibernate 
+	- login and reg module is done 
+	- working on TOC module 
+	- need to raise PR 
+- Ritu, Ashish - Vibhanshu - t5 - bean classes are done, reg, login is done, there are some changed, PR Raised 
+	- View profile employee and trainer 
+	- registration is completed 
+	- validation is pending 
+	- app with hibernate 
+	- working on dashboard 
+	- trainer and emp profile can be viewed 
+	- PR not raise 
+- Vibhansu , Ojasvi - Sumedh - t6 
+	- maven project is created, basic navigation functionality, need to create bean classes 
+	- not much progress from yesterday - vibhanshu was off 
+	- completed with login and reg (emp, trainer)
+	- error with hibernate integration 
+	- working on dashboard 
+	- PR is raised 
+- Sumedh, Yuvraj - Gurpreet - t7 - 
+	- new code PR is not raise still 
+	- trainer reg with hibernate 
+	- error while auth 
+	- yuvraj working on emp part with hibernate 
+	- PR is not raised 
+- Gurpreet, Kushal - Nischal - t8 
+	- bean classes are created, login part 
+	- working on login part 
+	- have got some code errors and working 
+	- working on hibernate part 
+	- working on reg emp and trainer 
+	- in login there is some error 
+	- PR not raised 
+- Nischal, Priya - Rahul - t9 
+	- could not show much 
+	- reg part is done 
+	- working on login part 
+	- some code problem to validate the data from the file 
+	- trainer login and registeration is done 
+	- working on hibernate 
+	- some fixes to be done in hibernate 
+	- PR is not raised 
+- Rahul, Sangita - Pulkit - t10 
+	- created maven project, employee module added, completed main file, wokring on login module 
+	- working on refractoring 
+	- working on employee login 
+	- need to raise the PR 
+	- emp and trainer reg is done 
+	- working with TOC of trainer 
+	- raised PR 
+- Sneha, Pulkit - Roshini - t11 - its is still at conceptual leve 
+	- not present 
+	- done with trainer and emp registration 
+	- and working with hibernate + dashboard 
+	- PR is not raised 
+- Roshini, Manshu - Satyaa - t12 
+	- working on bean classes, and has exam's 
+	- not much progress due to exams 
+	- has exams till 5th feb 
+	- login and reg is done 
+	- working on fixes 
+	- need to work on hibernate part 
+
+
+
+UNIT TESTING AND BEHAVIOR DRIVEN DEVELOPMENT	
+- Junit (Unit & Integration)
+- BDD (Cucumber)
+
+
+
+- junit 4 
+	>  Annotation 
+
+```
+	@Test - which will execute the test case 
+	@Before - which shall execute before each test case (n test case n number time it is invoked)
+	@After - will exeucte after each test case (n test case n number time it is invoked)
+	@BeforeClass - this is a static mehtod and shall be executed only once for entire class 
+	@AfterClass - will shall be executed only once after all test cases / class 
+```
+
+
+- junit 5 
+
+- BDD  - Behaviour Driven Development 
+- most times by non technical guys 
+
+```
+	1. 
+		As a Trainer 
+		I want to login to system 
+		So that i can update my profile 
+
+		As a Trainer 
+		I want to login to system 
+		So that i can create a toc 
+
+		As a User 
+		I Want to register 
+		So that i can login 
+
+	2. Given When Then But And 
+
+	Given the application is loaded on the site http://localhost:8080 
+	When the user clicks on the register button on top right corner 
+	And enters valid username and password 
+	Then clicks on "submit" button 
+	And the user is validated 
+	Then the user is taken to home page / dashboard 
+
+
+	Given the application is loaded on the site http://localhost:8080 
+	When the user clicks on the register button on top right corner 
+	And enters invalid username (less than 6 chars ) and password 
+	Then clicks on "submit" button 
+	And the user is validated 
+	Then the user is shown with error message 
+```
+
+```
+
+? - 0 or 1 
+* - o or more 
++ - 1 or more 
+```
+
+Tomorrow 
+MOCKING	
+- Mocks, Stubs  
+- Using Mock Effectively and Test Suites
+- Metrics and Code Coverage and Unit Testing
+- Code smells and refactoring
+- Test Data and Best Practices
+- Tooling Support
+- Virtualization and mock servers"
+- log4j, logback - Naveen 
+- SonarQube setup 
+
+
 
