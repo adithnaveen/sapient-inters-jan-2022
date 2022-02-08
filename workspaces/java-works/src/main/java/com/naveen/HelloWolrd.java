@@ -23,5 +23,6 @@ public class HelloWolrd {
 		new HelloWolrd().hello();
 		logger.info("hello info");
 		logger.debug("hello debug");
+		
 	}
 }

@@ -1898,3 +1898,44 @@ MOCKING
 - sequence diagram 
 
 
+```
+	public class Hello {
+		psvm(String [] args) {
+			// BL 
+			// bl 
+
+			System.out.println("testing"); 
+			try {
+
+			}catch(Exception e){
+				System.out.println(e); -> file (BW) -> db 
+			}
+		}
+
+	}
+```
+
+- Loggers 
+	- Log4j
+	- Logback 
+	- Logger - java.util 
+
+
+
+- Sonar Details 
+
+> sapient-project: 01d7422c5fd06e43200df280d24f5d8aac5db158	
+
+```
+
+> mvn clean sonar:sonar -Dsonar.projectKey=java-interns-works   -Dsonar.host.url=http://localhost:9000  -Dsonar.login=01d7422c5fd06e43200df280d24f5d8aac5db158 -Dsonar.java.binaries=target
+  
+> mvn clean sonar:sonar -Dsonar.projectKey=java-interns-works   -Dsonar.host.url=http://localhost:9000  -Dsonar.login=01d7422c5fd06e43200df280d24f5d8aac5db158  
+  
+```
+
+
+- first publish the report and jacoco exec file 
+>  mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install site 
+
+> mvn sonar:sonar 
