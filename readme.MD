@@ -1939,3 +1939,43 @@ MOCKING
 >  mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install site 
 
 > mvn sonar:sonar 
+
+
+```
+	interface List {
+		public boolean add(Employee e); 
+	}
+
+	class EmployeeList implements List {
+		public boolean add(Employee e) {
+			// some implementation -> mysql, oralce, db2 .... 
+		}
+	}
+
+	EmployeeList list= new EmployeeList();
+	list.add(new Employee()); 
+
+
+	// this is something i want to test 
+	interface List {
+		public boolean add(Employee e); 
+	}
+
+	mockito give me a proxy 
+
+```
+
+
+
+public interface IEmployeeService {
+	
+	public boolean login(String userEmail, String userPassword) throws Exception;
+	
+	public Employee employeeHomePage(Employee employee); 
+	
+	public void displayEmployeeInformation(Employee employee);
+	
+	public boolean registerEmployee(Employee employee);
+}
+
+

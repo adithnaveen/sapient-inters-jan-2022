@@ -5,10 +5,11 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import com.naveen.EmployeeService;
+import com.naveen.IEmployeeService;
  
 public class YourBusinessLogic {
 	
-	EmployeeService service; 
+	IEmployeeService service; 
 	public void setUp() {
 		service = new EmployeeService(); 
 	}
