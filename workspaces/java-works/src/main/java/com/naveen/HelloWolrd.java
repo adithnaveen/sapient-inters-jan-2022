@@ -1,5 +1,9 @@
 package com.naveen;
- 
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 
 public class HelloWolrd {
 	public String sayHi() {
@@ -11,7 +15,13 @@ public class HelloWolrd {
 		 
 	}
 	
+	
+	static Logger logger = LoggerFactory.getLogger(HelloWolrd.class); 
+	
+	
 	public static void main(String[] args) {
 		new HelloWolrd().hello();
+		logger.info("hello info");
+		logger.debug("hello debug");
 	}
 }

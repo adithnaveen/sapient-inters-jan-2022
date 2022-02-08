@@ -1766,3 +1766,135 @@ MOCKING
 
 
 
+# Day 15 
+
+
+- Scope of the project (Technical) 
+	- the application should be working with Eclipse 
+	- Error Managment to be taken care, and there is no abrupt exit 
+	- Layered Approach App -> Service+(Validation) -> Controller (dao)-> Hibernate -> DB 
+	- junit Test cases to be written for service 
+	- Code quality with sonar qube to be show cased 
+	- Use Loggers where ever application, especially in exception 
+	- Merging strategy should be shown cleanly 
+	- connecting jira with bitbucket 
+
+- Scope of the project (Business) 
+	- Registration of Trainer and employee 
+	- Login of Trainer and employee 
+	- The application shall show dashboard for each type of user 
+	- Updating profile of Trainer / Employee 
+	- Trainer should be able to create TOC (Optional)
+
+- Good to have 
+	- Application should be deployed with jenkins 
+	- Sequence Diagram 
+
+
+<br>
+
+
+
+- Satyaa, Mohit, Anurag - Chethan   - t1  - will show intrim demo today, 
+	- not much progrees need to work on IO  
+	- TOC part is left 
+	- hibernate is not done because of assessment - anurag 
+	- 
+- Gaurav, Chethan - Adil - t2 - bean classes are created 
+	- not much progress 
+	- reg, login  of emp and trainer 
+	- working on dashboard 
+	- still have not incorportated hibernate 
+	- custom excpetions are handled 
+
+- Adil, Sumanth - Ayushi -t3 - need to work nothing much to show 
+	- No Progress 
+	- employee, trainer and dashboard is done 
+	- have not connected with hibernate 
+	- no pr is raised 
+
+- Ayushi, Yashika - Ritu  - t4 - sent pull req, menu driven part is done, bean classes are completed 
+	- registration, employee registration is done 
+	- code is not push still 
+	- has raised the PR 
+	- app working with hibernate 
+	- login and reg module is done 
+	- working on TOC module 
+	- need to raise PR 
+- Ritu, Ashish - Vibhanshu - t5 - bean classes are done, reg, login is done, there are some changed, PR Raised 
+	- View profile employee and trainer 
+	- registration is completed 
+	- validation is pending 
+	- app with hibernate 
+	- working on dashboard 
+	- trainer and emp profile can be viewed 
+	- PR not raise 
+- Vibhansu , Ojasvi - Sumedh - t6 
+	- maven project is created, basic navigation functionality, need to create bean classes 
+	- not much progress from yesterday - vibhanshu was off 
+	- completed with login and reg (emp, trainer)
+	- error with hibernate integration 
+	- working on dashboard 
+	- PR is raised 
+- Sumedh, Yuvraj - Gurpreet - t7 - 
+	- new code PR is not raise still 
+	- trainer reg with hibernate 
+	- error while auth 
+	- yuvraj working on emp part with hibernate 
+	- PR is not raised 
+	- login return's null object while fetching from DB 
+- Gurpreet, Kushal - Nischal - t8 
+	- bean classes are created, login part 
+	- working on login part 
+	- have got some code errors and working 
+	- working on hibernate part 
+	- working on reg emp and trainer 
+	- in login there is some error 
+	- PR not raised 
+- Nischal, Priya - Rahul - t9 
+	- could not show much 
+	- reg part is done 
+	- working on login part 
+	- some code problem to validate the data from the file 
+	- trainer login and registeration is done 
+	- working on hibernate 
+	- some fixes to be done in hibernate 
+	- PR is not raised 
+- Rahul, Sangita - Pulkit - t10 
+	- created maven project, employee module added, completed main file, wokring on login module 
+	- working on refractoring 
+	- working on employee login 
+	- need to raise the PR 
+	- emp and trainer reg is done 
+	- working with TOC of trainer 
+	- raised PR 
+- Sneha, Pulkit - Roshini - t11 - its is still at conceptual leve 
+	- not present 
+	- done with trainer and emp registration 
+	- and working with hibernate + dashboard 
+	- PR is not raised 
+- Roshini, Manshu - Satyaa - t12 
+	- working on bean classes, and has exam's 
+	- not much progress due to exams 
+	- has exams till 5th feb 
+	- login and reg is done 
+	- working on fixes 
+	- need to work on hibernate part 
+
+
+
+
+
+MOCKING	
+- Mocks, Stubs  
+- Using Mock Effectively and Test Suites
+- Metrics and Code Coverage and Unit Testing
+- Code smells and refactoring
+- Test Data and Best Practices
+- Tooling Support
+- Virtualization and mock servers"
+- log4j, logback - Naveen 
+- SonarQube setup 
+- sequence diagram 
+
+
