@@ -1979,3 +1979,88 @@ public interface IEmployeeService {
 }
 
 
+
+
+
+# Day 16 
+
++ Will show list of jira stories 
+
+- Satyaa, Mohit, Anurag - Chethan   - t1   
+	- custom error to be created 
+	- need to write more test cases 
+	- need to incorporate sonarqube 
+	- 
+- Gaurav, Chethan - Adil - t2  
+	- write test cases 
+	- need to incorporate logger 
+	- some part of hibernate 
+	- integrate sonarqube 
+	- 
+- Adil, Sumanth - Ayushi -t3  
+	- need to do exception handling 
+	- need to write junit 
+	- code quality with sonar 
+	- branching strategy is not clear 
+
+- Ayushi, Yashika - Ritu  - t4  
+	- need to write junit 
+	- exception handling 
+	- BL - dashboard 
+
+- Ritu, Ashish - Vibhanshu - t5  
+	- need to write junit 
+	- loggers to be done 
+	- code merge pr
+	- exception hadling few are left 
+- Vibhansu , Ojasvi - Sumedh - t6 
+	- sonar qube, loggers to be done 
+	- some part of code merge 
+	- exception handling 
+	- update profile for logged in user 
+- Sumedh, Yuvraj - Gurpreet - t7 - 
+	-  sonarqube logger custom exception few are left 
+	- PR - merge 
+- Gurpreet, Kushal - Nischal - t8 
+	- junit, sonar, loggers, exception handling + some validation 
+
+- Nischal, Priya - Rahul - t9 
+	-  junit, sonar, loggers, exception handling + some validation 
+- Rahul, Sangita - Pulkit - t10 
+	- junit, sonar, loggers, exception handling + some validation + update trainer profile 
+	- 
+- Sneha, Pulkit - Roshini - t11  
+ - junit, sonar, loggers, some part of dashboard BL 
+
+- Roshini, Manshu - Satyaa - t12 
+	- junit, sonar, loggers,	 some part of dashboard BL + hibernate 
+
+
+
+
+
+
+
+logger.error- try{}catch(){error }
+logger.warn - Enter a number 1a 
+logger.info - 
+logger.fatal - 
+logger.trace 
+off
+All
+
+9:10 
+- We will be in zoom breakout room 
+- Raise PR - which is the main 
+- all scrum master look at the PR 10 min 
+- we will fix the gap 
+- scrum master by 2:00 PM today do a dry run 
+-  by 2:30  no work, 
+
+
+Order 
+- T1 
+- T2
+- T3
+..... 
+- T12 

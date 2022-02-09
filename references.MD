@@ -37,3 +37,16 @@ https://marketplace.eclipse.org/content/sonarlint
 
 ## sonarqube 
 https://www.sonarqube.org/downloads/
+
+
+## jconsole 
+https://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html
+
+## remote monitoring 
+https://www.baeldung.com/visualvm-jmx-remote
+
+
+
+
+
+
