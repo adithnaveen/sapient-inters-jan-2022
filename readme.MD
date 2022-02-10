@@ -2147,3 +2147,38 @@ Employee e = new Employee();
 - Mobile mobile = context.getBean("mobile", Mobile.class); 
 
 - BeanPostProcessor 
+
+
+
+
+
+
+- Version 2 Teams 
+
+- Team 1 - Yashika, Gaurav, Chetan, Manshu, Sumanth 
+- Team 2 - Ayushi, Sumedh, Ojasvi, Sangita, Priya 
+- Team 3 - Satya, Ashish, Kushal, Yuvraj, Adil 
+- Team 4 - Vibhanshu, Rahul, Ritu, Pulkit , Roshini 
+- Team 5 - Nischal, Gurpreet, Sneha, Mohit, Anurag 
+
+
+S D E T  
+30 % programming 
+70% other things 
+
+
+
+
+> git clone https://tools.publicis.sapient.com/bitbucket/scm/batch/team-1.git
+
+> git branch -a 
+
+> git checkout naveen-test 
+
+> continue your coding 
+
+> git ci -m "BATCH-144: updated code for"
+
+> git push origin naveen-test 
+
+
