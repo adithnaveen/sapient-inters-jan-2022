@@ -2182,3 +2182,7 @@ S D E T
 > git push origin naveen-test 
 
 
+- Maven project 
+- Build it with jenkins 
+- new repoisotiry for version 2 application 
+
