@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+	 <bean id="emp" class="com.naveen.beans.Employee" 
+	 	scope="prototype" autowire="byName"
+	 	init-method="init" destroy-method="destroy">
+	 	
+		<property name="empId" value="101" />
+		<property name="empName" value="Sangita" />
+		<property name="empEmail" value="sangita@sangita.com"/>
+		
+	</bean> 
+ 
+
+<!-- 	<bean id="emp" class="com.naveen.beans.Employee">
+		<constructor-arg name="empId" value="101" />
+		<constructor-arg name="empName" value="Sangita" />
+		<constructor-arg name="empEmail" value="sangita@sangita.com" />
+		
+	</bean> -->
+	
+	
+
+</beans>
