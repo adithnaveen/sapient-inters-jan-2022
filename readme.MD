@@ -2146,3 +2146,4 @@ Employee e = new Employee();
 
 - Mobile mobile = context.getBean("mobile", Mobile.class); 
 
+- BeanPostProcessor 
