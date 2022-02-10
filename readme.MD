@@ -2129,3 +2129,20 @@ Employee e = new Employee();
 </beans>
 
 ```
+
+- Assignment - how autowire can be implemented with annotation  
+	- Manufacturing Mobile 
+		- Camera
+			- type -> vga, x mp 
+		- Display 
+			- amloed, super amloed, ips 
+		- Battery 
+			- lithim, hydrogen 
+		- Processor
+			- type 
+			- core 
+				- amd, intel... 
+
+
+- Mobile mobile = context.getBean("mobile", Mobile.class); 
+
