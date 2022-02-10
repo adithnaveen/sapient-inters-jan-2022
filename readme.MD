@@ -2064,3 +2064,68 @@ Order
 - T3
 ..... 
 - T12 
+
+
+# Day 17 
+
+
+INSTRUMENTATION, LOGGING, TOOLS DEBUGGING 
+AND TROUBLESHOOTING"	"•	Troubleshooting
+•	Load and CPU Usage 
+•	Basics of Thread dumps 
+•	Heap and other metrics 
+•	Log and Log file understanding (log4j2)
+•	Connection and Network Troubleshooting Basics 
+•	Instrumentations, Micro meter and JMX Basics (jconsole + jvisual), visual VM 
+•	Monitoring Java applications 
+•	Checklist on trouble shooting
+
+```
+	int x =100; 
+	boolean b; 
+```
+
+System.gc();
+System.getRuntime().gc(); 
+Graphana (UI) -> Prometheus 
+
+
+
+## Spring	
+
+- Overview of Spring framework
+- IOC and DI
+- Wiring - Manual (xml) and Auto(Annotation)
+- Autowired 
+- Component
+
+
+
+Employee e = new Employee();
+ 
+- management the object e 
+- or taking care of life cycele 
+- 1998 - EJB (EMB, SMB, BMC)
+	- Glassfish (Oralce)
+	- jboss(REDHAD)
+	- weblogic(ORACL)
+	- web sphere (IBM)
+- struts (1.x, 2.x )
+- IOC / DI 
+
+
+> 2nd version project 
+- 4 team size  
+
+
+
+> sample xml file for spring 
+```
+	<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   http://www.springframework.org/schema/beans/spring-beans.xsd">
+</beans>
+
+```

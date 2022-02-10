@@ -20,6 +20,7 @@ public class HelloWolrd {
 	
 	
 	public static void main(String[] args) {
+		new String("hi"); 
 		new HelloWolrd().hello();
 		logger.info("hello info");
 		logger.debug("hello debug");
