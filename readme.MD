@@ -2252,3 +2252,13 @@ Codes to Rememter
 3xx - 307 
 4xx - 404, 405, 403 
 5xx - 501, 500
+
+
+
+- JSP - Java Server Pages 
+- Servlet - is a class you can have html code / JSP - is html kind of file where you can have java snippets 
+- <%... %> - Java Snippets 
+- <%! .. %> - declaration 
+- <%@ ... %> directives - imports 
+- <%= ... %> - expressions - variable declaration 
+
