@@ -51,3 +51,9 @@ https://tomcat.apache.org/download-90.cgi
 
 ## spring tutorials 
 https://www.baeldung.com/spring-tutorial
+
+
+## server codes 
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+

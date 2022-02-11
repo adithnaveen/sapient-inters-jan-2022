@@ -2186,3 +2186,69 @@ S D E T
 - Build it with jenkins 
 - new repoisotiry for version 2 application 
 
+<br>
+
+# Day 18 
+
+<br>
+
+
+
+Web / MVC	
+
+- Web basics
+- Understanding HTTP protocol
+- Java Servlet API
+- Handling HTTP requests
+- JavaServer Pages
+- MVC pattern
+
+
+- CGI - Dynamic Content 
+	- native progroam langaugel 
+- HTTP 
+	- 1.0 - Statefull protocol 
+	- 1.1 - Stateless protocol 
+		- session 
+		- pull 
+	- 2.0 
+		- no session 
+		- push 
+		- full duplex communication 
+- servlets
+	- 1.1 - Stateless protocol 
+		- session 
+		- pull 
+
+
+
+- GET - www.sumedh.com/articles/this-is-new-topic.html 
+	- Sneha 
+	- Mohit 
+	.... 
+- POST - www.sumedh.com/login 
+
+
+http://localhost:8080/web-works/hello
+
+```
+	- Mapping 
+
+	<servlet>
+		<servlet-name>hello</servlet-name>
+		<servlet-class>com.naveen.HelloWorldController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+```
+
+
+Codes to Rememter 
+1XX - 100, 101
+2xx - 200, 201
+3xx - 307 
+4xx - 404, 405, 403 
+5xx - 501, 500
