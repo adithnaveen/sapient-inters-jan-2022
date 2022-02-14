@@ -14,7 +14,8 @@ import com.naveen.dao.LoginDao;
 public class LoginValidateServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
  
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+				throws ServletException, IOException {
 		 
 		String userName = request.getParameter("uname"); 
 		String password = request.getParameter("pass"); 
@@ -32,6 +33,8 @@ public class LoginValidateServlet extends HttpServlet {
 			request.setAttribute("company-name", "SAPIENT INDIA PRIVATE LTD");
 			request.setAttribute("login", new Login("DUMMY", "DUYMMY"));
 			request.getRequestDispatcher(uri).forward(request, response);
+			
+			
 		}else {
 			// show the login form with the error message 
 			System.out.println("in else case.. ");

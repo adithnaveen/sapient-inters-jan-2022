@@ -2262,3 +2262,54 @@ Codes to Rememter
 - <%@ ... %> directives - imports 
 - <%= ... %> - expressions - variable declaration 
 
+
+<br>
+
+# Day 19 
+
+<br>
+
+
+Spring MVC	
+- Spring MVC architecture
+- DispatcherServlet
+- HandlerMapping
+- Controllers and request handlers
+- ViewResolver
+- Handling GET and POST requests 
+
+
+
+
+```
+	- Controller 
+		- client data request (req, res)
+		- @WebServlet("/")
+		- request.getParameter("city"); 
+	- Model 
+		- POJO, WORM, DAO+Service+
+	- View 
+		- GUI (HTML/JS/CSS)
+```
+
+- Project Structure 
+- web-application 
+	- WEB-INF
+		- web.xml 
+		- pages 
+			- .jsp 
+
+
+
+> end-user -> Invokes the application -> web.xml -> finds and loads index.jsp -> page is displayed 
+> end-user -> web.xml -> DispatcherServlet -> shall take all the requests (/) -> understands the URI -> Contrller (@Controller) -> return String 
+		-> View Resolver -> shall call the view -> /WEB-INF/pages/hello.jsp 
+
+- Version 2 Teams 
+
+- Team 1 - Yashika, Gaurav, Chetan, Manshu, Sumanth 
+- Team 2 - Ayushi, Sumedh, Ojasvi, Sangita, Priya 
+- Team 3 - Satya, Ashish, Kushal, Yuvraj, Adil 
+- Team 4 - Vibhanshu, Rahul, Ritu, Pulkit , Roshini 
+- Team 5 - Nischal, Gurpreet, Sneha, Mohit, Anurag 
+
