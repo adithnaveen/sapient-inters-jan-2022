@@ -6,16 +6,29 @@ import javax.servlet.ServletRegistration.Dynamic;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
+import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-public class AppConfig implements WebApplicationInitializer {
+@ComponentScan(basePackages = {"com.naveen.controller", "com.naveen.dao"})
+public class AppConfig implements WebApplicationInitializer, WebMvcConfigurer {
+
+	
+	
+	
+	@Override
+	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+		configurer.enable();
+	}
+
 
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
@@ -33,7 +46,7 @@ public class AppConfig implements WebApplicationInitializer {
 	@Bean
 	public InternalResourceViewResolver viewResolver() {
 		InternalResourceViewResolver irvr = new InternalResourceViewResolver(); 
-		irvr.setPrefix("/WEB-INF/pages");
+		irvr.setPrefix("/WEB-INF/pages/");
 		irvr.setSuffix(".jsp"); 
 		return irvr; 
 	}

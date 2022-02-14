@@ -2305,6 +2305,9 @@ Spring MVC
 > end-user -> web.xml -> DispatcherServlet -> shall take all the requests (/) -> understands the URI -> Contrller (@Controller) -> return String 
 		-> View Resolver -> shall call the view -> /WEB-INF/pages/hello.jsp 
 
+
+http://localhost:8080/spring-application/hello-mvc 
+
 - Version 2 Teams 
 
 - Team 1 - Yashika, Gaurav, Chetan, Manshu, Sumanth 
