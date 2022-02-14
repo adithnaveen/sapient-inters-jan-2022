@@ -2305,6 +2305,8 @@ Spring MVC
 > end-user -> web.xml -> DispatcherServlet -> shall take all the requests (/) -> understands the URI -> Contrller (@Controller) -> return String 
 		-> View Resolver -> shall call the view -> /WEB-INF/pages/hello.jsp 
 
+> end-user -> web.xml -> DS (/) ->  Controller (Give me a form + Template Model) -> for the bean to be filled and  to be sent to server 
+
 
 http://localhost:8080/spring-application/hello-mvc 
 
