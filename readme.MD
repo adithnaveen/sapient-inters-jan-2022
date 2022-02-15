@@ -2318,3 +2318,59 @@ http://localhost:8080/spring-application/hello-mvc
 - Team 4 - Vibhanshu, Rahul, Ritu, Pulkit , Roshini 
 - Team 5 - Nischal, Gurpreet, Sneha, Mohit, Anurag 
 
+
+
+# Day 20 
+
+Spring boot	
+
+Spring boot - what, why and how
+Creating REST endpoints
+Best practices to be followed
+Spring boot and MongoDB
+CRUD operations via REST API
+
+
+- Orchestration tools 
+	- Kubernetees
+	- Rancher
+	- Docker Swarm 
+
+
+- In Memory DB's 
+	- Redis 
+	- MemCache 
+
+
+
+- Rest 
+	- Representation Style 
+
+
+- RESTLET 
+- REST EASY 
+- JERSEY 
+- SpringBoot 
+
+
+- Web Server
+	- Tomcat (Default)
+	- Jetty - Light Server For Java 
+	- Netty - Reactive Server
+	- Application Server 
+		- Web Logic 
+		- Web Sphere 
+		- Jboss 
+		- glassfish 
+
+
+## Spring Boot project 
+>  https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.6.3&packaging=jar&jvmVersion=11&groupId=com.naveen&artifactId=rest-works&name=rest-works&description=Demo%20project%20for%20Spring%20Boot&packageName=com.naveen.rest.works&dependencies=web,data-mongodb,devtools,lombok
+
+
+
+
+
+
+
+
