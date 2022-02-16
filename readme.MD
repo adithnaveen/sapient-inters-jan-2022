@@ -2451,3 +2451,22 @@ employees.address.hno=111
 
 - save - will look for the ID if the ID is matching then it updates if not it insertes (UPSPERT)
 - insert - will just insert 
+
+
+
+
+{
+  "timestamp": "2022-02-16T06:15:41.676+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "trace": "trace goes here",
+  "message": "No message available",
+  "path": "/user/106"
+}
+
+
+{
+	"message":"your message", 
+	"details":"details", 
+	"date":"date/time"
+}

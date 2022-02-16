@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import com.naveen.rest.works.beans.User;
 
-@Repository
+
 public interface UserRepository extends MongoRepository<User, Integer> {
 
 	// + if you want customized queries you can write here 
