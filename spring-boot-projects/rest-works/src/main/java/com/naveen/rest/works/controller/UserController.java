@@ -32,7 +32,7 @@ public class UserController {
 		return service.getAllUsers();
 	}
 
-	// GET http://localhost:9090/user/112
+	// GET http://localhost:9090/user/112 -> 404
 	@GetMapping("/user/{id}")
 	public User getUserById(@PathVariable("id") Integer id) throws UserNotFoundException {
 		User retUser = service.getUserByIdAsObject(id);

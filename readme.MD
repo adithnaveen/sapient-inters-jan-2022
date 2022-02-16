@@ -2470,3 +2470,31 @@ employees.address.hno=111
 	"details":"details", 
 	"date":"date/time"
 }
+
+
+- complete the methods 
+- actuator -> HAL Browser 
+
+
+
+
+
+
+- Team 1 - Yashika, Gaurav, Chetan, Manshu, Sumanth 
+- Team 2 - Ayushi, Sumedh, Ojasvi, Sangita, Priya 
+- Team 3 - Satya, Ashish, Kushal, Yuvraj, Adil 
+- Team 4 - Vibhanshu, Rahul, Ritu, Pulkit , Roshini 
+- Team 5 - Nischal, Gurpreet, Sneha, Mohit, Anurag 
+
+- trainer registration 
+{
+	"trainer-name":String, 
+	"years-of-exp":Integer, 
+	"technologies":[
+		{
+			"name":String, 
+			"years-of-exp":Integer, 
+			"expert-handle":enum(Freshers/Laterals/Consultancy)
+		}
+	]
+}
