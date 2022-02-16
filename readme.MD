@@ -2369,8 +2369,85 @@ CRUD operations via REST API
 
 
 
+# Day 21 
+- DBMS 
+	- storage is atomic 
+	- ACID 
+- DB 
+	- java object 
+	- No Concept of ACID 
+	- json 
+	- MongoDB, Dynamodb, redis, mem cahce, cauch db, cockroach, ... 
+```
+WS - DOM / SAX / StAX 
+
+<?xml version="1.0"?>
+
+<employees>
+	<employee id="101">
+		<name>
+			<firstName>Sneha</firstName>
+			<lastName>Banda</lastName>
+		</name>
+
+		<address>
+			<hno>111</hno>
+			<street>American Dream Blvd</street>
+			<city>Reston</city>
+			<state>Virginia</state>
+			<country>USA</country>
+		</address>
+
+	</employee>
+</employees>
+
+
+RS - JSON - 2005 W3C Accepted this -> JS, 
+{
+	"employees":[
+		{
+			"id":"101", 
+			"name":{
+				"firstName":"Sneha", 
+				"lastName":"Banda"
+			}, 
+			"address":{
+				"address":111, 
+				"street":"American Dream Blvd", 
+				"city":"Reston", 
+				"state":"Virginia",
+				"country":"USA"
+			}
+		},{
+			"id":"102", 
+			"name":{
+				"firstName":"Satyaa", 
+				"lastName":"Goyal"
+			}
+		}, {},{}	
+	]
+}
+
+employees.address.hno=111
+```
 
 
 
 
+9200 RPM - HDD 
+1.33 x 2 mhz 
 
+2.4ghz 
+
+
+- starting mongodb 
+
+- create a folder 
+- open terminal in that folder 
+- mongo --dbpath . <enter>
+- open another terminal anywhere 
+- mongo <enter>
+
+
+- save - will look for the ID if the ID is matching then it updates if not it insertes (UPSPERT)
+- insert - will just insert 
