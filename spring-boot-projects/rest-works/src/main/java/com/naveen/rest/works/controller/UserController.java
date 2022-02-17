@@ -53,9 +53,6 @@ public class UserController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(returnedUser);
 	}
 	
-	
-	
-	
 	// PUT -> update
 	@PutMapping("/user")
 	public ResponseEntity<?> updateUser(@RequestBody User user) throws UserNotFoundException{

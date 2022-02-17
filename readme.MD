@@ -2480,11 +2480,11 @@ employees.address.hno=111
 
 
 
-- Team 1 - Yashika, Gaurav, Chetan, Manshu, Sumanth 
-- Team 2 - Ayushi, Sumedh, Ojasvi, Sangita, Priya 
-- Team 3 - Satya, Ashish, Kushal, Yuvraj, Adil 
-- Team 4 - Vibhanshu, Rahul, Ritu, Pulkit , Roshini 
-- Team 5 - Nischal, Gurpreet, Sneha, Mohit, Anurag 
+- Team 1 - Yashika, Gaurav, Chetan, Manshu, Sumanth - team1.txt - Chetan
+- Team 2 - Ayushi, Sumedh, Ojasvi, Sangita, Priya - team2.txt - Sumedh 
+- Team 3 - Satya, Ashish, Kushal, Yuvraj, Adil - team3.txt - Satyaa 
+- Team 4 - Vibhanshu, Rahul, Ritu, Pulkit , Roshini - team4.txt - Vibhanshu 
+- Team 5 - Nischal, Gurpreet, Sneha, Mohit, Anurag - team5.txt - Nischal 
 
 - trainer registration 
 {
@@ -2498,3 +2498,57 @@ employees.address.hno=111
 		}
 	]
 }
+
+
+
+# Day 22 
+
+
+- Containerisation	
+- Docker	
+	- Docker setup
+	- Images and containers
+	- Containerising a Maven Java project
+	- Integrating with Jenkins
+
+
+- Web Sites 
+- Web Applications 
+
+
+
+- if you want an image (software) - hub.docker.com 
+
+> docker pull hello-world (this will only get the image - Passive )
+
+> docker start hello-world (create a container for the image which you are invoking, and start  )
+
+> docker run hello-world
+
+> docker ps (show running containers)
+
+> docker rm container-id (remove container which are stopped)
+
+> docker start container-id (to start the container which is stopped)
+
+> docker stop container-id (to stop the container which is running)
+
+> docker rmi image-id/name (to remove the image)
+
+> docker exec -it container-id /bin/sh
+
+> docker run --name container-name -p incoming-port:docker-port -d image-name
+
+> docker pull imagename 
+
+
+
+
+
+
+
+- local install 
+- katakoda 
+
+
+-p 27017:27017 
