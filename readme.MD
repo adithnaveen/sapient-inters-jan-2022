@@ -2552,3 +2552,96 @@ employees.address.hno=111
 
 
 -p 27017:27017 
+
+
+- push the image to docker hub 
+
+> docker build -t adithnaveen/spring-boot-docker-test:1 . 
+
+> docker pull adithnaveen/spring-boot-docker-test
+
+> docker images 
+
+> docker run  --name rest-works -p 8080:8080 -d adithnaveen/spring-boot-docker-test:1
+
+-- from satyaa 
+> docker pull satyaagoyal/spring-boot-docker-test:1
+
+
+- data models + end points by morning 8:30 AM - who will take which end points 
+- simple end point 
+- project with sonarqube 
+- DevOps (BitBucket, Jenkins, Docker)
+- Development 
+- Test case 
+- Documentation - Dev docs + Swagger 
+- Multi Module (Check with Vishal)
+- create repos 
+- creating jira stories 
+
+
+
+
+/trainer/sign-up  -> POST /api/trainer/register
+/trainer/sign-in -> POST /api/authenticate
+/trainer/create-toc 
+/TOC/view-toc 
+/trainer/profile/update 
+API/dashboard
+
+
+
+
+
+
+- TOC 
+	- SpringBoot Application 
+	- Create TOC - POST /api/toc
+	- Get all TOC GET /api/toc 
+	- Get single TOC GET /api/toc/{tocid}
+	- Delete single TOC DELETE /api/toc/{tocid}
+	- Updated toc PUT /api/toc/{tocid}
+- Trainer 
+	- SpringBoot Application 
+
+- Employee 
+	- SpringBoot Application 
+
+
+
+
+# Day 23 
+
+Securing web apps	
+- Authentication and Authorization
+- Programmatic v Declarative Security
+- Getting Spring Security from Maven
+- Spring Security Configuration
+- Spring Security Configuration Example with JWT 
+- Oauth Concepts and Basics
+- Single repo vs multi module project 
+
+
+
+ResponseEntity<String> response
+  = restTemplate.getForEntity("http://google.com/someapi/someendpoin", String.class);
+
+
+- Richardson Maturity Model 
+
+
+port numbers 
+
+
+
+| service | port numbers |
+|----|----|
+| MS 1| 8100| 
+| MS 2 | 8200 | 
+| MS 2 | 8250 | 
+| Eureka | 8761 | 
+| API Gateway | 8765 | 
+| MongoDB | 27017 | 
+
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
