@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.naveen.rest.works.beans.User;
 import com.naveen.rest.works.exception.UserNotFoundException;
+import com.naveen.rest.works.proxy.UserAddressProxy;
 import com.naveen.rest.works.service.UserService;
 
 @RestController
@@ -23,11 +24,20 @@ public class UserController {
 	@Autowired
 	private UserService service;
 
+	@Autowired
+	private UserAddressProxy userProxy; 
+	
+	
 	@GetMapping("/health")
 	public String sayHello() {
 		return "Service Is Up";
 	}
 
+	@GetMapping("/user/address/{name}")
+	public String getUserAddress(@PathVariable String name) {
+		return userProxy.getAddress(name); 
+	}
+	
 	// GET http://localhost:9090/user
 	@GetMapping("/user")
 	public List<User> getUsers() {

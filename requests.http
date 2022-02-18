@@ -48,3 +48,29 @@ Content-Type: application/json
 GET http://localhost:9090/actuator HTTP/1.1
 Content-Type: application/json
  
+
+### 
+
+GET http://localhost:8200/address/Nischal HTTP/1.1
+Content-Type: application/json
+ 
+ 
+### 
+
+GET http://localhost:8100/user/address/Nischal HTTP/1.1
+Content-Type: application/json
+ 
+ 
+### 
+
+GET http://localhost:8765/REST-WORKS/user/address/Nischal HTTP/1.1
+Content-Type: application/json
+ 
+ 
+ 
+### 
+
+GET http://localhost:8765/rest-works/user/address/Nischal HTTP/1.1
+Content-Type: application/json
+ 
+ 

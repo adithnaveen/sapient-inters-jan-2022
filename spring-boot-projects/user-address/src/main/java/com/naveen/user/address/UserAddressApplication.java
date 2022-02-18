@@ -1,29 +1,24 @@
-package com.naveen.rest.works;
+package com.naveen.user.address;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-
-// to invoke swagger 
-//http://localhost:9090/v3/api-docs/
-//http://localhost:9090/swagger-ui/index.html
-
-
-// to invoke hal browser 
-//http://localhost:9090/
-
-@EnableFeignClients
+@RestController
 @EnableEurekaClient
 @SpringBootApplication
-public class RestWorksApplication {
+public class UserAddressApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestWorksApplication.class, args);
+		SpringApplication.run(UserAddressApplication.class, args);
+	}
+	
+	@GetMapping("/address/{name}")
+	public String getAddress(@PathVariable String name) {
+		return "Mr/Ms/Mrs " + name +" resides in Address(DB)"; 
 	}
 
-	
 }

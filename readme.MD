@@ -2638,10 +2638,46 @@ port numbers
 |----|----|
 | MS 1| 8100| 
 | MS 2 | 8200 | 
-| MS 2 | 8250 | 
 | Eureka | 8761 | 
 | API Gateway | 8765 | 
 | MongoDB | 27017 | 
 
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+
+
+
+# eureka server 
+> https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.6.3&packaging=jar&jvmVersion=11&groupId=com.naveen&artifactId=eureka-server&name=eureka-server&description=eureka%20server&packageName=com.naveen.eureka.server&dependencies=web,cloud-eureka-server
+
+
+## user address service 
+> https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.6.3&packaging=jar&jvmVersion=11&groupId=com.naveen&artifactId=user-address&name=user-address&description=user%20address%20service&packageName=com.naveen.user.address&dependencies=cloud-eureka,web
+
+
+## Api gateway 
+
+> https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.6.3&packaging=jar&jvmVersion=11&groupId=com.naveen&artifactId=api-gateway&name=api-gateway&description=api%20gateway%20service&packageName=com.naveen.api.gateway&dependencies=web,cloud-eureka,cloud-gateway
+
+ http://localhost:8200/
+ http://localhost:8100/
+ 
+
+ - single end poin for all the users 
+ http://localhost:8765/REST-WORKS/user 
+ http://localhost:8765/USER-ADDRESS/address 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
