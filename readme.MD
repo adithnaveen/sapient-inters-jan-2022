@@ -2670,9 +2670,36 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 
 
 
+# Day 24 
+
+
+Securing web apps	
+- [x] Authentication and Authorization
+- [x] Programmatic v Declarative Security
+- [x] Getting Spring Security from Maven
+- [x] Spring Security Configuration
+- [x] Spring Security Configuration Example with JWT 
+- [x] Oauth Concepts and Basics
+- [x] Traditional Monolithic Designs and Their Role
+- [x] Disadvantages of Monoliths
+- [x] Moving from a Legacy Monolith
+- [x] When Moving from a Legacy Monolith
+- [x] The Driving Forces Behind Microservices
+- [x] How Can Microservices Help You?
+- [x] The Microservices Architecture
+- [x] Utility Microservices at AWS
+- [x] Microservices Inter-connectivity- Feign 
+- [x] The Data Exchange Interoperability Consideration
+- [] Managing Microservices - Sleuth/Zipkin 
+- [x] Implementing Microservices
+- [] Embedding Databases in Java
+	- HSQL, H2, Apache Derby 
+- [] Microservice-Oriented Application Frameworks and Platforms
+- [] Design Patterns
 
 
 
+Bearer lkjasldfjalsjfd
 
 
 

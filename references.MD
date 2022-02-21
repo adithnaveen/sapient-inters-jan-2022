@@ -59,3 +59,12 @@ https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 
 ## mongod download link 
 https://www.mongodb.com/try/download/community
+
+
+
+## jwt white paper 
+https://datatracker.ietf.org/doc/html/rfc7519
+
+
+
+

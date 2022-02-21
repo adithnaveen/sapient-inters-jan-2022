@@ -9,5 +9,5 @@
   -Dsonar.host.url=http://localhost:9000 \
   -Dsonar.login=affe4264d869c9642c6a22271c4cda60e23c49ae
 
-
+> when you are testing test only services and controller other files to be put in ignore list 
 
