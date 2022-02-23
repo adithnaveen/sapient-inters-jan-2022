@@ -2641,6 +2641,8 @@ port numbers
 | Eureka | 8761 | 
 | API Gateway | 8765 | 
 | MongoDB | 27017 | 
+| Jenkins | 8080 | 
+
 
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
@@ -2692,19 +2694,94 @@ Securing web apps
 - [x] The Data Exchange Interoperability Consideration
 - [] Managing Microservices - Sleuth/Zipkin 
 - [x] Implementing Microservices
-- [] Embedding Databases in Java
+- [x] Embedding Databases in Java
 	- HSQL, H2, Apache Derby 
+	- mvn clean install 
+	- java -jar target/somefile.jar 
+	- mvn spring-boot:run
 - [] Microservice-Oriented Application Frameworks and Platforms
 - [] Design Patterns
 
 
+ 
 
-Bearer lkjasldfjalsjfd
+```
+
+class Employee {
+	@Id
+	private String id; 
+	private String name; 
 
 
+	public Employee(String name) {
+		this.name = name; 
+	}
+
+	// getters and setters 
+}
+
+BL 
+how many records are there in the DB (Write method in service layer which shall give the cound)
+
+when you want to save 
+Employee e  = new Employee("Satyaa"); 
+e.setId(service.getCount()+1);
+
+repo.save(e); 
+
+```
 
 
+# Day 25
+
+- Design Patterns 
 
 
+- Team 1 - Yashika, Gaurav, Chetan, Manshu, Sumanth - team1.txt - Chetan
+	- team is spending time reading the docs 
+	- facing an issue with jenkins pipeline 
+	- PR not raised so far 
+	// { 'location' : { '$near' : [point.x, point.y], '$maxDistance' : distance}}
+  			List<Person> findByLocationNear(Point location, Distance distance);
+		@Query("{'userName':?1, 'password':?2}")
+	- User findUserByUserNamePassword(String userName, String password)
+	- Trainer / Employee service, CRUD - done 
+	- jenkins pipelnie is done - trianer 
+	- setup docker n/w 
+	- not ablt to generate jwt 
+	- 
+- Team 2 - Ayushi, Sumedh, Ojasvi, Sangita, Priya - team2.txt - Sumedh 
+	- registration working 
+	- working to docerize the application 
+	- 1 MS + mongodb working 
+	- trainer, emp service working dev system + exception incorporated 
+	- working  on TOC+ test cases for service and controller, sonar is pending 
+	- auth is working 
+	- PR need to be raised 
 
+- Team 3 - Satya, Ashish, Kushal, Yuvraj, Adil - team3.txt - Satyaa 
+	- minor difficulties are there 
+	- some dev errors 
+	- adil did not join 
+	- 
+- Team 4 - Vibhanshu, Rahul, Ritu, Pulkit , Roshini - team4.txt - Vibhanshu 
+	- some program error 
+	- working on mongo with docker 
+	- login to be done 
+	- emp shall create the TOC and trainer can only view 
+	- 
+- Team 5 - Nischal, Gurpreet, Sneha, Mohit, Anurag - team5.txt - Nischal 
+	- anurag has college work 
+	- working on mongodb with docker working for 1 MS 
+	- dev error employee MS 
+	- 
+
+
+# Day 26 
+
+- Arch Diagram 
+- Sequence Diagram 
+- 4:00 PM the dry run 
+- PR Raised 
+- 
 
