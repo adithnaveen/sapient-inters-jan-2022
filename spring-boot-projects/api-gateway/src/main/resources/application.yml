@@ -1,0 +1,42 @@
+server:
+    port: 8765
+
+spring:
+    application:
+        name: GATEWAY-SERVICE
+    cloud:
+        gateway:
+            globalcors:
+                corsConfigurations:
+                    '[/**]':
+                        allowedOrigins: '*'
+                        allowedMethods: '*'
+                        allowedHeaders: '*'
+            routes:
+                - id: restWorks
+                  predicates:
+                      - Path=/api/user/**
+                  uri: lb://REST-WORKS/
+
+                - id: userAddress
+                  predicates:
+                      - Path=/api/user-address/**
+                  uri: lb://USER-ADDRESS/
+
+                - id: authService
+                  predicates:
+                      - Path=/api/users/**
+                  uri: lb://AUTH-SERVICE/
+
+                - id: registerService
+                  predicates:
+                      - Path=/api/register/**
+                  uri: lb://AUTH-SERVICE/
+
+                - id: authenticateService
+                  predicates:
+                      - Path=/api/authenticate/**
+                  uri: lb://AUTH-SERVICE/
+
+    instance:
+        hostname: localhost

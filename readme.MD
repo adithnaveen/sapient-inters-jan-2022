@@ -2758,23 +2758,38 @@ repo.save(e);
 	- working  on TOC+ test cases for service and controller, sonar is pending 
 	- auth is working 
 	- PR need to be raised 
+	- auth with mongo - has prob 
+	- working on sonar
+	- jenkins still not done 
+	- some test cases are failing when docerized 
 
 - Team 3 - Satya, Ashish, Kushal, Yuvraj, Adil - team3.txt - Satyaa 
 	- minor difficulties are there 
 	- some dev errors 
 	- adil did not join 
+	- end points trainer / employee are done 
+	- integrated with sonar + jenkins 
+	- MS are not connect in docker
 	- 
 - Team 4 - Vibhanshu, Rahul, Ritu, Pulkit , Roshini - team4.txt - Vibhanshu 
 	- some program error 
 	- working on mongo with docker 
 	- login to be done 
 	- emp shall create the TOC and trainer can only view 
+	- docerized is having error - with trainer module 
+	- end points are done 
+	- need to implement sonarqube 
+	- jenkins pipeline not implemented 
+	- vibhanshu & ritu has problem with system when they run more then 2-3 containers 
 	- 
 - Team 5 - Nischal, Gurpreet, Sneha, Mohit, Anurag - team5.txt - Nischal 
 	- anurag has college work 
 	- working on mongodb with docker working for 1 MS 
 	- dev error employee MS 
-	- 
+	- sonar with docker is done 
+	- some endpoints are remaining + working in dev system 
+	- need to docerize 
+	- need to work on jenkins 
 
 
 # Day 26 
@@ -2784,4 +2799,98 @@ repo.save(e);
 - 4:00 PM the dry run 
 - PR Raised 
 - 
+
+# Day 27 
+
+
+
+- Team 1 - Yashika, Gaurav, Chetan, Manshu, Sumanth - team1.txt - Chetan
+	- team is spending time reading the docs 
+	- facing an issue with jenkins pipeline 
+	- PR not raised so far 
+	// { 'location' : { '$near' : [point.x, point.y], '$maxDistance' : distance}}
+  			List<Person> findByLocationNear(Point location, Distance distance);
+		@Query("{'userName':?1, 'password':?2}")
+	- User findUserByUserNamePassword(String userName, String password)
+	- Trainer / Employee service, CRUD - done 
+	- jenkins pipelnie is done - trianer 
+	- setup docker n/w 
+	- not able to generate jwt 
+	--- 
+	- docerized emp, trainer modules 
+	- working on jwt, sonar, junit  
+	- setup API gateway 
+	- jenkins pipeline is up and working 
+	- arch diagram 
+- Team 2 - Ayushi, Sumedh, Ojasvi, Sangita, Priya - team2.txt - Sumedh 
+	- registration working 
+	- working to docerize the application 
+	- 1 MS + mongodb working 
+	- trainer, emp service working dev system + exception incorporated 
+	- working  on TOC+ test cases for service and controller, sonar is pending 
+	- auth is working 
+	- PR need to be raised 
+	- auth with mongo - has prob 
+	- working on sonar
+	- jenkins still not done 
+	- some test cases are failing when docerized 
+	----- 
+	- code is working fine 
+	- instances are docerized except API Gateway 
+	- test cases are done 
+	- sonar is done 
+	- jenkins is working 
+	- need to create jira stories
+	- auth is left 
+	- good to have 
+		- prometheus 
+		- grafana 
+
+- Team 3 - Satya, Ashish, Kushal, Yuvraj, Adil - team3.txt - Satyaa 
+	- minor difficulties are there 
+	- some dev errors 
+	- adil did not join 
+	- end points trainer / employee are done 
+	- integrated with sonar + jenkins 
+	- MS are not connect in docker
+	----- 
+	- Auth is left 
+	- Good To Have
+		- sleuth 
+		- zipkin 
+- Team 4 - Vibhanshu, Rahul, Ritu, Pulkit , Roshini - team4.txt - Vibhanshu 
+	- some program error 
+	- working on mongo with docker 
+	- login to be done 
+	- emp shall create the TOC and trainer can only view 
+	- docerized is having error - with trainer module 
+	- end points are done 
+	- need to implement sonarqube 
+	- jenkins pipeline not implemented 
+	- vibhanshu & ritu has problem with system when they run more then 2-3 containers 
+	-----
+	- docerized application + db 
+	- tested with sonar working - need to get more test cases for code covererage 
+	- auth and jenkins pending 
+	- Good To Havee 
+		- Resliance 4j - google 
+- Team 5 - Nischal, Gurpreet, Sneha, Mohit, Anurag - team5.txt - Nischal 
+	- anurag has college work 
+	- working on mongodb with docker working for 1 MS 
+	- dev error employee MS 
+	- sonar with docker is done 
+	- some endpoints are remaining + working in dev system 
+	- need to docerize 
+	- need to work on jenkins 
+	- working on auth 
+---
+	- jenkins, docerized all containers, sonar(80%) - done 
+	- need to write junit test cases 
+	- auth need to be up 
+	- loggers 
+	- Good To Have 
+		- all request to employee* end poins to be logged to mysql server (use AOP)
+
+
+
 
